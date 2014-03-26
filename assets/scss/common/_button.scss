@@ -1,12 +1,7 @@
 @mixin button($color: $blue, $clear: false, $disabled: false, $border: true) {
   background: transparent;
   @include border-radius($radius);
-  @if $clear == true {
-    color: inherit;
-  }
-  @else {
-    color: inherit;
-  }
+  color: $color;
   display: inline-block;
   padding: $gutter/5 $gutter/2;
   @if $disabled == false {

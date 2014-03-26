@@ -1,5 +1,5 @@
 #header {
-  background: $grey;
+  border-bottom: 2px solid tint($base, 80%);
   font-size: $small;
   margin-bottom: $gutter;
   padding: 1.5*$gutter/2 0;
@@ -8,7 +8,7 @@
     color: inherit;
     margin: 0 $gutter/2;
     &:hover {
-      color: $base;
+      color: $blue;
     }
   }
 }

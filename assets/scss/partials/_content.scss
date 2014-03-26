@@ -17,7 +17,7 @@
       font-size: $huge;
     }
   }
-  #subscribe {
+  #register {
     padding-top: 0;
     position: relative;
     p {
@@ -29,7 +29,6 @@
       width: 100%;
       a {
         @include button(#FFF);
-        color: #FFF;
         font-size: $huge;
         padding: $gutter/2 $gutter;
         &:hover {
@@ -41,5 +40,15 @@
   #mail {
     border: 2px solid tint($base, 80%);
     @include border-radius($radius);
+  }
+  #speakers {
+    a {
+      @include button($green);
+    }
+  }
+  #sponsors {
+    a {
+      @include button($blue);
+    }
   }
 }

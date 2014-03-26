@@ -455,20 +455,17 @@ select {
 input:not([type=submit]),
 textarea {
   background: #FFF;
-  border: 1px solid #dee1e4;
+  border: 2px solid #d3d8dc;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px 1px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px 1px inset;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px 1px inset;
   padding: 5px 10px; }
   input:not([type=submit]):active, input:not([type=submit]):focus,
   textarea:active,
   textarea:focus {
-    border-color: #66bfeb;
+    border-color: #0095de;
     outline: none; }
   input:not([type=submit])[disabled], input:not([type=submit])[disabled=disabled], input:not([type=submit])[readonly=true],
   textarea[disabled],
@@ -648,7 +645,7 @@ table {
 
 /* HEADER */
 #header {
-  background: #f4f5f6;
+  border-bottom: 2px solid #d3d8dc;
   font-size: 16px;
   margin-bottom: 20px;
   padding: 15px 0;
@@ -657,7 +654,7 @@ table {
     color: inherit;
     margin: 0 10px; }
     #header a:hover {
-      color: #273d51; }
+      color: #0095de; }
 
 /* CONTENT */
 #content .row {
@@ -672,39 +669,38 @@ table {
     margin: 30px 0 10px; }
   #content #hero p {
     font-size: 32px; }
-#content #subscribe {
+#content #register {
   padding-top: 0;
   position: relative; }
-  #content #subscribe p {
+  #content #register p {
     bottom: 4.5rem;
     display: block;
     margin: 0;
     position: absolute;
     text-align: center;
     width: 100%; }
-    #content #subscribe p a {
+    #content #register p a {
       background: transparent;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px;
-      color: inherit;
+      color: white;
       display: inline-block;
       padding: 4px 10px;
       border: 2px solid white;
-      color: #FFF;
       font-size: 32px;
       padding: 10px 20px; }
-      #content #subscribe p a:hover, #content #subscribe p a:focus {
+      #content #register p a:hover, #content #register p a:focus {
         background: white;
         color: #FFF;
         outline: none;
         text-decoration: none; }
-      #content #subscribe p a:active, #content #subscribe p a.active {
+      #content #register p a:active, #content #register p a.active {
         background: white;
         text-decoration: none; }
-      #content #subscribe p a:hover {
+      #content #register p a:hover {
         color: #0095de; }
 #content #mail {
   border: 2px solid #d3d8dc;
@@ -713,14 +709,61 @@ table {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px; }
+#content #speakers a {
+  background: transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #07d774;
+  display: inline-block;
+  padding: 4px 10px;
+  border: 2px solid #07d774; }
+  #content #speakers a:hover, #content #speakers a:focus {
+    background: #07d774;
+    color: #FFF;
+    outline: none;
+    text-decoration: none; }
+  #content #speakers a:active, #content #speakers a.active {
+    background: #1fdb81;
+    text-decoration: none; }
+#content #sponsors a {
+  background: transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #0095de;
+  display: inline-block;
+  padding: 4px 10px;
+  border: 2px solid #0095de; }
+  #content #sponsors a:hover, #content #sponsors a:focus {
+    background: #0095de;
+    color: #FFF;
+    outline: none;
+    text-decoration: none; }
+  #content #sponsors a:active, #content #sponsors a.active {
+    background: #199fe1;
+    text-decoration: none; }
 
 /* FOOTER */
 #footer {
-  background: #f4f5f6;
+  border-top: 2px solid #d3d8dc;
   font-size: 16px;
   margin-top: 20px;
   padding: 40px 0; }
+  #footer h3 {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0; }
+  #footer .links {
+    display: inline; }
   #footer a {
-    color: inherit; }
+    color: inherit;
+    margin-right: 20px; }
     #footer a:hover {
-      color: #273d51; }
+      color: #0095de; }
+  #footer .credits {
+    color: #a8b1b9; }
