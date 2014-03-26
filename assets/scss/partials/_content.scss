@@ -11,10 +11,11 @@
   #hero {
     padding-bottom: 0;
     h1 {
-      margin: 1.5*$gutter 0 $gutter/2;
+      margin: 0 0 $gutter/2;
     }
-    p {
-      font-size: $huge;
+    h2 {
+      color: inherit;
+      font-size: normal;
     }
   }
   #register {
@@ -45,10 +46,12 @@
       label {
         display: none;
       }
+      input {
+        margin-bottom: $gutter/2;
+      }
     }
     .button {
       @include button($blue);
-      margin-top: $gutter;
     }
   }
   #speakers {
@@ -59,6 +62,38 @@
   #sponsors {
     a {
       @include button($green);
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 40rem) { 
+  #content {
+    text-align: center;
+    .row {
+      padding: $gutter 0;
+    }
+    .third {
+      text-align: center;
+    }
+    h1 {
+      font-size: $huge;
+    }
+    h2 {
+      font-size: $large;
+    }
+    #register {
+      img {
+        display: none;
+      }
+      p {
+        bottom: auto;
+        position: relative;
+        a {
+          @include button($green);
+          padding: $gutter/2 $gutter;
+        }
+      }
     }
   }
 }

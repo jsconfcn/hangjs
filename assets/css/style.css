@@ -240,9 +240,10 @@ table {
 #content #hero {
   padding-bottom: 0; }
   #content #hero h1 {
-    margin: 30px 0 10px; }
-  #content #hero p {
-    font-size: 32px; }
+    margin: 0 0 10px; }
+  #content #hero h2 {
+    color: inherit;
+    font-size: normal; }
 #content #register {
   padding-top: 0;
   position: relative; }
@@ -287,6 +288,8 @@ table {
     display: inline; }
     #content #mail .mc-field-group label {
       display: none; }
+    #content #mail .mc-field-group input {
+      margin-bottom: 10px; }
   #content #mail .button {
     background: transparent;
     -webkit-border-radius: 5px;
@@ -297,8 +300,7 @@ table {
     color: #0095de;
     display: inline-block;
     padding: 4px 10px;
-    border: 2px solid #0095de;
-    margin-top: 20px; }
+    border: 2px solid #0095de; }
     #content #mail .button:hover, #content #mail .button:focus {
       background: #0095de;
       color: #FFF;
@@ -346,6 +348,43 @@ table {
     background: #1fdb81;
     text-decoration: none; }
 
+/* Mobile */
+@media (max-width: 40rem) {
+  #content {
+    text-align: center; }
+    #content .row {
+      padding: 20px 0; }
+    #content .third {
+      text-align: center; }
+    #content h1 {
+      font-size: 32px; }
+    #content h2 {
+      font-size: 22px; }
+    #content #register img {
+      display: none; }
+    #content #register p {
+      bottom: auto;
+      position: relative; }
+      #content #register p a {
+        background: transparent;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        color: #07d774;
+        display: inline-block;
+        padding: 4px 10px;
+        border: 2px solid #07d774;
+        padding: 10px 20px; }
+        #content #register p a:hover, #content #register p a:focus {
+          background: #07d774;
+          color: #FFF;
+          outline: none;
+          text-decoration: none; }
+        #content #register p a:active, #content #register p a.active {
+          background: #1fdb81;
+          text-decoration: none; } }
 /* FOOTER */
 #footer {
   border-top: 2px solid #d3d8dc;
