@@ -606,7 +606,7 @@ h1 {
   line-height: 140%; }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 140%; }
 
 h3 {
@@ -665,6 +665,8 @@ table {
   text-align: right; }
 #content #hero {
   padding-bottom: 0; }
+  #content #hero .column img {
+    width: 140px; }
   #content #hero h1 {
     margin: 0 0 10px; }
   #content #hero h2 {
@@ -691,7 +693,7 @@ table {
       display: inline-block;
       padding: 4px 10px;
       border: 2px solid white;
-      font-size: 32px;
+      font-size: 28px;
       padding: 10px 20px; }
       #content #register p a:hover, #content #register p a:focus {
         background: white;
@@ -783,7 +785,7 @@ table {
     #content .third {
       text-align: center; }
     #content h1 {
-      font-size: 32px; }
+      font-size: 28px; }
     #content h2 {
       font-size: 22px; }
     #content #register img {
