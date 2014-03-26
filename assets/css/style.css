@@ -283,6 +283,30 @@ table {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px; }
+  #content #mail .mc-field-group {
+    display: inline; }
+    #content #mail .mc-field-group label {
+      display: none; }
+  #content #mail .button {
+    background: transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    color: #0095de;
+    display: inline-block;
+    padding: 4px 10px;
+    border: 2px solid #0095de;
+    margin-top: 20px; }
+    #content #mail .button:hover, #content #mail .button:focus {
+      background: #0095de;
+      color: #FFF;
+      outline: none;
+      text-decoration: none; }
+    #content #mail .button:active, #content #mail .button.active {
+      background: #199fe1;
+      text-decoration: none; }
 #content #speakers a {
   background: transparent;
   -webkit-border-radius: 5px;
@@ -309,17 +333,17 @@ table {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  color: #0095de;
+  color: #07d774;
   display: inline-block;
   padding: 4px 10px;
-  border: 2px solid #0095de; }
+  border: 2px solid #07d774; }
   #content #sponsors a:hover, #content #sponsors a:focus {
-    background: #0095de;
+    background: #07d774;
     color: #FFF;
     outline: none;
     text-decoration: none; }
   #content #sponsors a:active, #content #sponsors a.active {
-    background: #199fe1;
+    background: #1fdb81;
     text-decoration: none; }
 
 /* FOOTER */

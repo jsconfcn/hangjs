@@ -40,6 +40,16 @@
   #mail {
     border: 2px solid tint($base, 80%);
     @include border-radius($radius);
+    .mc-field-group {
+      display: inline;
+      label {
+        display: none;
+      }
+    }
+    .button {
+      @include button($blue);
+      margin-top: $gutter;
+    }
   }
   #speakers {
     a {
@@ -48,7 +58,7 @@
   }
   #sponsors {
     a {
-      @include button($blue);
+      @include button($green);
     }
   }
 }
