@@ -1,0 +1,21 @@
+#header {
+  padding: $gutter 0;
+  a {
+    color: $base;
+    &:hover {
+      color: shade($base, 20%);
+    }
+  }
+	.logo {
+    font-size: $huge;
+		&:before {
+			@include icon();
+      content: 'L';
+      margin-right: $gutter/4;
+		}
+	}
+	.sign-in {
+    text-decoration: none;
+    text-align: right;
+	}
+}
