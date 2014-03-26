@@ -1,0 +1,121 @@
+/* Compass */
+
+@import 'compass/css3';
+@import 'compass/css3/border-radius';
+@import 'compass/css3/filter';
+@import 'compass/css3/transition';
+@import 'compass/css3/transform';
+@import 'compass/utilities/general/clearfix';
+@import 'compass/css3/user-interface';
+
+/* Variables (colors, layout, spacing & typography) */
+
+@import '_variables.scss';
+
+/* Common styling (eggshell) */
+
+@import 'common/_form.scss';
+@import 'common/_button.scss';
+@import 'common/_icon.scss';
+@import 'common/_grid.scss';
+
+/* GENERAL */
+
+html,
+body {
+  font-family: $font;
+  height: 100%;
+}
+
+body {
+  background: #FFF;
+  color: tint($base, 40%);
+  font-size: $size;
+  line-height: 160%;
+}
+
+a {
+  cursor: pointer;
+  color: shade($blue, 10%);
+  text-decoration: none;
+  &:hover {
+    color: tint($blue, 10%);
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $base;
+  font-family: $font;
+  margin: 0 0 $gutter;
+}
+
+h1 {
+  font-size: $gigantic;
+  line-height: 140%;
+}
+
+h2 {
+  font-size: $huge;
+  line-height: 140%;
+}
+
+h3 {
+  font-size: $large;
+  line-height: 140%;
+}
+h4 {
+  font-size: $gigantic;
+  line-height: 140%;
+}
+p {
+  margin: 0 0 $gutter;
+}
+
+ul {
+  margin: 0 0 $gutter/2 $gutter;
+  padding: 0;
+  li {
+    padding: 0 0 $gutter/2;
+  }
+}
+
+small {
+  font-size: $small;
+}
+
+table {
+  margin: 0 0 $gutter;
+  th,
+  td {
+    padding: $gutter/2;
+  }
+  thead {
+    border-bottom: 1px solid tint($base, 90%);
+    th {
+      font-size: $small;
+      font-weight: normal;
+      white-space: nowrap;
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid tint($base, 95%);
+    }
+  }
+}
+
+/* HEADER */
+
+@import 'partials/_header.scss';
+
+/* CONTENT */
+
+@import 'partials/_content.scss';
+
+/* FOOTER */
+
+@import 'partials/_footer.scss';

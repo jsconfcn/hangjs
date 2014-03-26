@@ -1,0 +1,64 @@
+#content {   
+  .row {
+    padding: 2*$gutter 0;
+  }
+  .column img {
+    max-width: 100%;   
+  }
+  .third {
+    text-align: right;
+  }
+  #hero {
+    padding-bottom: 0;
+    h1 {
+      margin: 1.5*$gutter 0 $gutter/2;
+    }
+    p {
+      font-size: $huge;
+    }
+  }
+  #register {
+    padding-top: 0;
+    position: relative;
+    p {
+      bottom: 4.5rem;
+      display: block;
+      margin: 0;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      a {
+        @include button(#FFF);
+        font-size: $huge;
+        padding: $gutter/2 $gutter;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+  #mail {
+    border: 2px solid tint($base, 80%);
+    @include border-radius($radius);
+    .mc-field-group {
+      display: inline;
+      label {
+        display: none;
+      }
+    }
+    .button {
+      @include button($blue);
+      margin-top: $gutter;
+    }
+  }
+  #speakers {
+    a {
+      @include button($green);
+    }
+  }
+  #sponsors {
+    a {
+      @include button($green);
+    }
+  }
+}

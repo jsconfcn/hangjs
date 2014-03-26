@@ -1,0 +1,14 @@
+#header {
+  border-bottom: 2px solid tint($base, 80%);
+  font-size: $small;
+  margin-bottom: $gutter;
+  padding: 1.5*$gutter/2 0;
+  text-align: center;
+  a {
+    color: inherit;
+    margin: 0 $gutter/2;
+    &:hover {
+      color: $blue;
+    }
+  }
+}

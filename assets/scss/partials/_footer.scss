@@ -1,0 +1,24 @@
+#footer {
+  border-top: 2px solid tint($base, 80%);
+  font-size: $small;
+  margin-top: $gutter;
+  padding: 2*$gutter 0;
+  h3 {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+  }
+  .links {
+    display: inline;
+  }
+  a {
+    color: inherit;
+    margin-right: $gutter;
+    &:hover {
+      color: $blue;
+    }
+  }
+  .credits {
+    color: tint($base, 60%);
+  }
+}
