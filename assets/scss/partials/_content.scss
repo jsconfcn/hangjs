@@ -1,101 +1,45 @@
-#content { 
+#content {   
+  .row {
+    padding: 2*$gutter 0;
+  }
   .column img {
-    max-width: 100%;
+    max-width: 100%;   
   }
-  .signup {
-    @include button($green, false, false, false);
-    padding: $gutter/2 1.5*$gutter/2;
-  }
-  .section {
-    padding: 2.5*$gutter 0;
-    h2 {
-      font-size: $gigantic;
-      margin-bottom: 2*$gutter;
-      text-align: center;
-    }
-    p.description {
-      margin-bottom: 2*$gutter;
-      margin-top: -$gutter;
-      text-align: center;
-    }
+  .third {
+    text-align: right;
   }
   #hero {
-    a {
-      @include border-radius(2*$radius);
+    padding-bottom: 0;
+    h1 {
+      margin: 1.5*$gutter 0 $gutter/2;
+    }
+    p {
       font-size: $huge;
-      padding: $gutter 2*$gutter;
     }
   }
-  #features {
-    background: $grey;
-    .row {
-      margin-bottom: $gutter;
-      &:last-child {
-        margin: 0;
-      }
-    }
-    .half {
+  #subscribe {
+    padding-top: 0;
+    position: relative;
+    p {
+      bottom: 4.5rem;
+      display: block;
+      margin: 0;
+      position: absolute;
       text-align: center;
-      h3 {
+      width: 100%;
+      a {
+        @include button(#FFF);
+        color: #FFF;
         font-size: $huge;
-        &:before {
-          background: $base;
-          @include border-radius($gutter);
-          color: #FFF;
-          font-size: $large;
-          padding: $gutter/5 $gutter/2;
-          line-height: 1;
-          margin-right: $gutter/2;
+        padding: $gutter/2 $gutter;
+        &:hover {
+          color: $blue;
         }
       }
-      h3,
-      p {
-        text-align: left;
-      }
-    }
-    .create h3:before {
-      content: '1';
-    }
-    .setup h3:before {
-      content: '2';
-    }
-    .use h3:before {
-      content: '3';
     }
   }
-  #pricing {
-    h4 {
-      background: $grey;
-      color: inherit;
-      font-size: inherit;
-      margin-left: -1rem;
-      margin-right: -1rem;
-      padding: $gutter/2 0;
-      strong {
-        color: $base;
-        font-size: $gigantic;
-        line-height: 140%;
-      }
-    }
-    .plans {
-      border: 1px solid shade($grey, 10%);
-      @include border-radius($radius);
-      text-align: center;
-      .plan {
-        border-right: 1px solid shade($grey, 10%);
-        padding-bottom: $gutter;
-        padding-top: $gutter;
-        &:last-child {
-          border: 0;
-        }
-        ul {
-          list-style: none;
-          margin: 0 0 $gutter;
-          li {
-            padding: 0;
-          }
-        }
-      }
-    }
+  #mail {
+    border: 2px solid tint($base, 80%);
+    @include border-radius($radius);
   }
 }

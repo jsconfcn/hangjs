@@ -7,111 +7,113 @@
   <meta charset='utf-8'/>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='shortcut icon' href='assets/images/favicon.ico' />
-  <meta name='description' content='Hello'/>
-  <meta name='keywords' content='Hubot, automatio, integration, SaaS'/>
+  <meta name='description' content='JS中国技术大会'/>
+  <meta name='keywords' content='杭州, Javascript, 技术, 大会'/>
 
   <!-- CSS -->
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'/>
   <link href='/public/styles.css' rel='stylesheet' type='text/css'/>
 </head>
 <body>
-  <header id='header' class='container'>
-    <div class='row'>
-  <a href='/#' class='column fourth'>首页</a>
-  <a href='/#' class='column fourth'>关于</a>
-  <a href='/#' class='column fourth'>讲师</a>
-  <a href='/#' class='column fourth'>赞助&组织</a>
-</div>
-
+  <header id='header'>
+    <section class='container'>
+	<div class='row'>
+	  <div class='column full'>
+			<a href='#hero'>首页</a>
+			<a href='#about'>关于</a>
+			<a href='#mail'>讲师</a>
+			<a href='#sponsors'>赞助&组织</a>
+	  </div>	
+	</div>
+</section>
+	
   </header>
 
   <section id='content'>
     
-<section id='hero' name='hero' class='section container'>
-  <div id='pitch' class='column full'>
-    <h1>JS中国技术大会</h1>
-    <p>2014年6月9-10日，杭州</p>
-    <img src='/assets/images/logo.png' alt='logo'/>
-    <img src='/assets/images/img.png' alt='screenshot'/>
+<section class='container'>
+  <div class='row' id='hero' name='hero'>
+    <div class='column third'>
+      <img src='/assets/images/logo.png' alt='logo'/>
+    </div>
+    <div class='column two-thirds'>
+      <h1>JS中国技术大会</h1>
+      <p>2014年6月9-10日，杭州</p>
+    </div>
+  </div>
+  <div class='row' id='subscribe' name='subscribe'>
+    <div class='column full'>
+      <p><a href='#'>Subscribe</a></p>
+      <img src='/assets/images/img.png' alt='screenshot'/>
+    </div>
+  </div>
+  <div class='row' id='about' name='about'>
+    <div class='column third'>
+      <h2>关于技术大会</h2>
+    </div>
+    <div class='column two-thirds'>
+      <p class='description'>杭JS2014是一场专注于JavaScript和Node.js技术，为期两天的国际性技术大会。届时，大会会邀请国内外的优秀讲师为大家分享在JavaScript和Node.js技术方面的经验。大会将于6月9-10日在杭州召开。</p>
+    </div>
   </div>
 </section>
 
-<section id='about' class='section container' name='about'>
-  <div class='colum full'>
-    <h2>关于技术大会</h2>
-    <p class='description'>杭JS2014是一场专注于JavaScript和Node.js技术，为期两天的国际性技术大会。届时，大会会邀请国内外的优秀讲师为大家分享在JavaScript和Node.js技术方面的经验。大会将于6月9-10日在杭州召开。</p>
+<section class='container'>
+  <div class='row' id='mail' name='mail'>
+    <div class='column third'>
+      <h2>邮件列表</h2>
+    </div>
+    <div class='column two-thirds'>
+      <p class='description'>注册到邮件列表获取最新大会消息。</p>
+      <form>
+        <div>
+          <input type='email' placeholder='电子邮件' value name='EMAIL'></input>
+          <input type='submit' value='订阅' class='btn'></input>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
 
-<section id='maillist' class='section container' name='maillist'>
-  <div class='colum full'>
-    <h2>邮件列表</h2>
-    <p class='description'>注册到邮件列表获取最新大会消息。</p>
-    <form>
-      <div>
-        <input type='email' placeholder='电子邮件' value name='EMAIL'></input>
-        <input type='submit' value='订阅' class='btn'></input>
-      </div>
-    </form>
+<section class='container'>
+  <div class='row' id='speakers' name='speakers'>
+    <div class='column third'>
+      <h2>讲师</h2>
+    </div>
+    <div class='column two-thirds'>
+      <p>极客之行，诚邀你的参与！</p>
+    </div>
   </div>
-</section>
-
-<section id='speakers' class='section container' name='speakers'>
-  <div class='colum full'>
-    <h2>讲师</h2>
-    <p class='description'>极客之行，诚邀你的参与！</p>
-  </div>
-</section>
-
-<section id='sponsors' class='section container' name='sponsors'>
-  <div class='colum full'>
-    <h2>赞助</h2>
-    <p class='description'>你期待谁的出现？或者你就可以来发表演讲！</p>
+  <div class='row' id='sponsors' name='sponsors'>
+    <div class='column third'>
+      <h2>赞助</h2>
+    </div>
+    <div class='column two-thirds'>
+      <p>你期待谁的出现？或者你就可以来发表演讲！</p>
+    </div>
   </div>
 </section>
 
   </section>
 
   <footer id='footer'>
-    <div class='container'>
-  <section class='row'>
-    <nav class='products column fourth'>
-      <h3>Products</h3>
-      <ul>
-        <li><a href='mailto:info@wiredcraft.com'>devo.ps</a></li>
-        <li>Octochat (soon)</li>
-      </ul>
-
-      <h3>Connect</h3>
-      <ul>
-        <li><a href='mailto:info@wiredcraft.com'>Email</a></li>
-        <li><a href='http://twitter.com/wiredcraft'>Twitter</a></li>
-        <li><a href='http://weibo.com/wiredcraft'>Weibo</a></li>
-      </ul>
-    </nav>
-
-    <nav class='company column fourth'>
-      <h3>Company</h3>
-      <ul>
-      <li><a href='http://wiredcraft.com/#about'>About</a></li>
-      <li><a href='http://wiredcraft.com/#team'>Team</a></li>
-      <li><a href='http://wiredcraft.com/careers'>Jobs</a></li>
-      <li><a href='http://wiredcraft.com/blog'>Blog</a></li>
-    </ul>
-    </nav>
-
-    <nav class='credit column half'>
-      <img src='/assets/images/wiredcraft.png' alt='Wiredcraft'/>
-      <h3>Built by Wiredcraft</h3>
-      <p><a href='http://wiredcraft.com'>Wiredcraft</a> is a consultancy based out of San Francisco and Shanghai, building products at the intersection of technology and data.</p>
-    </nav>
-  </section>
-
-  <section class='row'>
-    <p class='copyright column full'>©2014 Wiredcraft Co ltd</p>
-  </section>
-</div>
-
+    <section class='container'>
+  <div class='row'>
+    <div class='column full'>
+      <a href='mailto:welcome@jingjs.org?Subject=[JingJS]%20General%20Inquiry' class='email'><span>Email</span></a>
+      <a href='http://weibo.com/jingjs2014' class='weibo'><span>Weibo</span></a>
+      <a href='https://twitter.com/jingjsconf' class='twitter'><span>Twitter</span></a>
+      <a href='https://github.com/jsconfcn' class='github'><span>Github</span></a>
+      <a href='http://jsconf.cn/' class='web'><span>http://jsconf.cn/</span></a>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='column full'>
+      <a href='code-of-conduct.html'>Code of conduct</a>
+      <a href='http://creativecommons.org/licenses/by/3.0/'>CCA 3.0 License</a>
+      <span>Built by <a href='http://jsconf.cn'>Wiredcraft</a></span>
+    </div>
+  </div>
+</section>
   </footer>
 
   <!-- JS -->

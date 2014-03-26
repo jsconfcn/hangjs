@@ -1,21 +1,14 @@
 #header {
-  padding: $gutter 0;
+  background: $grey;
+  font-size: $small;
+  margin-bottom: $gutter;
+  padding: 1.5*$gutter/2 0;
+  text-align: center;
   a {
-    color: $base;
+    color: inherit;
+    margin: 0 $gutter/2;
     &:hover {
-      color: shade($base, 20%);
+      color: $base;
     }
   }
-	.logo {
-    font-size: $huge;
-		&:before {
-			@include icon();
-      content: 'L';
-      margin-right: $gutter/4;
-		}
-	}
-	.sign-in {
-    text-decoration: none;
-    text-align: right;
-	}
 }

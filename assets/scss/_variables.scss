@@ -1,15 +1,11 @@
 /* Colors */
 
-
-
 $red: #ee5c5d;
-$yellow: #f1c40f;
-$green: #2ecc71;
-$blue: #3498db;
-$purple: #784FAB;
-$grey: #95a5a6;
-$dark: #2c3e50;
-$base: #3A3A3A;
+$yellow: #F6C700;
+$green: #07D774;
+$blue: #0095DE;
+$base: #273D51;
+$grey: tint($base, 95%);
 
 /* Spacing */
 
@@ -18,15 +14,15 @@ $radius: 5px;
 
 /* Typography */
 
-$font: 'Hiragino Sans GB', 'STXihei','Microsoft YaHei',Arial, sans-serif;
+$font: 'Hiragino Sans GB', Tahoma, Arial, 'Microsoft Yahei', '微软雅黑', STXihei, '华文细黑', sans-serif;
 
 $pico: 10px;
 $micro: 12px;
-$small: 14px;
-$size: 16px;
-$large: 18px;
-$huge: 22px;
-$gigantic: 32px;
+$small: 16px;
+$size: 18px;
+$large: 22px;
+$huge: 32px;
+$gigantic: 46px;
 
 /* Layout */
 

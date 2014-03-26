@@ -1,14 +1,14 @@
 @mixin button($color: $blue, $clear: false, $disabled: false, $border: true) {
-  background: $color;
+  background: transparent;
   @include border-radius($radius);
   @if $clear == true {
     color: inherit;
   }
   @else {
-    color: #FFF;
+    color: inherit;
   }
   display: inline-block;
-  padding: $gutter/4 $gutter/2;
+  padding: $gutter/5 $gutter/2;
   @if $disabled == false {
     &:hover,
     &:focus {
@@ -16,7 +16,8 @@
         background: tint($color, 80%);
       }
       @else {
-        background: shade($color, 10%);
+        background: $color;
+        color: #FFF;
       }
       outline: none;
       text-decoration: none;
@@ -33,7 +34,7 @@
     }
   }
   @if $border == true {
-    border: 1px solid shade($color, 10%);
+    border: 2px solid $color;
   }
 }
 
