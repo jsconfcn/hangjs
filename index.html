@@ -12,18 +12,57 @@
 
   <!-- CSS -->
   <link href='http://jsconfcn.qiniudn.com/styles.css' rel='stylesheet' type='text/css'/>
+  <style>
+    #header {
+      position: fixed;
+      width: 100%;
+      background-color: #fff;
+      z-index: 9999;
+    }
+
+    #content {
+      padding-top: 60px;
+    }
+  
+
+    #content #venue-map {
+      height: 300px;
+    }
+
+    #content #sponsors ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  
+
+    #content #sponsors li {
+      float: left;
+      margin: 5px;
+    }
+
+    #content #sponsors li a:hover{
+      background: transparent;
+    }
+
+    #content #sponsors li a img {
+      background-size: 50% 50%;
+    }
+  </style>
 </head>
 <body>
   <header id='header'>
     <section class='container'>
 	<div class='row'>
 	  <div class='column full'>
-			<a href='#hero'>首页</a>
-			<a href='#about'>关于</a>
-			<a href='#mail'>邮件列表</a>
-			<a href='#speakers'>演讲嘉宾</a>
-      <a href='#sponsors'>赞助商</a>
-			<a href='http://jsconf.cn'>往届大会</a>
+			<a id="heroBtn" href='#hero'>首页</a>
+			<a id="aboutBtn" href='#about'>关于</a>
+			<!--<a id="mailBtn" href='#mail'>邮件列表</a>-->
+			<a id="speakersBtn" href='#speakers'>演讲嘉宾</a>
+      <a id="sponsorsBtn" href='#sponsors'>赞助商</a>
+      <a href='http://jsconf.cn'>往届大会</a>
+			<a id="followBtn" href='#follow'>关注我们</a>
 	  </div>	
 	</div>
 </section>
@@ -43,7 +82,7 @@
   </div>
   <div class='row' id='register' name='register'>
     <div class='column full'>
-      <p><a href='#'>参加活动</a></p>
+      <p><a href='#'>售票尚未开始</a></p>
       <img src='http://jsconfcn.qiniudn.com/img.png' alt='screenshot'/>
     </div>
   </div>
@@ -55,10 +94,19 @@
       <p>杭JS——2014 JS中国开发者大会是一场专注于JavaScript和Node.js技术，为期两天的国际性技术大会。届时，大会会邀请国内外的优秀讲师为大家分享在JavaScript和Node.js技术方面的经验。大会将于6月21-22日在杭州召开。</p>
     </div>
   </div>
+  <div class='row' id='venue' name='about'>
+    <div class='column third'>
+      <h2>会场地址</h2>
+    </div>
+    <div class='column two-thirds'>
+      <p><a href="http://doubletree.com.cn/HGHHEDI/" target="_blank">杭州和达希尔顿逸林酒店（DOUBLETREE By HILTON）</a></p>
+      <p><div id="venue-map"></div></p>
+    </div>
+  </div>
 </section>
 
 <section class='container'>
-  <div class='row' id='mail' name='mail'>
+  <div class='row' id='mail' name='mail' style="display:none;">
     <div class='column third'>
       <h2>邮件列表</h2>
     </div>
@@ -101,8 +149,30 @@
       <h2>赞助商</h2>
     </div>
     <div class='column two-thirds'>
-      <p>极客之行，诚邀你的参与！</p>
-      <p><a href='mailto:goddyzhao@jsconf.cn?Subject=[HangJS]成为赞助商(Become a sponsor)'>成为赞助商</a></p>
+      <p>感谢以下赞助商对大会的大力支持</p>
+      <p>
+        <ul>
+          <li>
+            <a href="http://labs.ef.com/" target="blank"><img src="http://jsconfcn.qiniudn.com/img/ef.png" alt=""></a>
+          </li>
+          <li>
+            <a href="http://teambition.com/" target="blank"><img src="http://jsconfcn.qiniudn.com/img/teambition.png" alt=""></a>
+          </li>
+          <li>
+            <a href="http://www.qiniu.com" target="blank"><img src="http://jsconfcn.qiniudn.com/img/qiniu.png" alt=""></a>
+          </li>
+        </ul>
+        <a href='mailto:goddyzhao@jsconf.cn?Subject=[HangJS]成为赞助商(Become a sponsor)'>成为赞助商</a>
+      </p>
+    </div>
+  </div>
+  <div class='row' id='follow' name='follow'>
+    <div class='column third'>
+      <h2>关注我们</h2>
+    </div>
+    <div class='column two-thirds'>
+      <p>扫描下面<b>微信二维码</b>获取最新大会动态</p>
+      <p><img src="http://jsconfcn.qiniudn.com/img/weixin.png" alt=""></p>
     </div>
   </div>
 </section>
@@ -131,6 +201,28 @@
   <!-- JS -->
   <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
   <script type='text/javascript' src='http://jsconfcn.qiniudn.com/scripts.js'></script>
+  <script type="text/javascript" src="http://jsconfcn.qiniudn.com/lib/scroll.js"></script>
+  <script type="text/javascript" src="http://jsconfcn.qiniudn.com/lib/mapsapi.js"></script>
+  <script type="text/javascript" src="http://jsconfcn.qiniudn.com/lib/gmaps.js"></script>
+  <script type="text/javascript">
+    $("[id*='Btn']").stop(true).on('click',function(e){e.preventDefault();$(this).scrolld();});
+
+    var venueMap = new GMaps({
+      div: '#venue-map',
+      lat: 30.312208,
+      lng: 120.324304
+    });
+
+    venueMap.addMarker({
+      lat: 30.312208,
+      lng: 120.324304,
+      title: '杭州和达希尔顿逸林酒店',
+      infoWindow: {
+        content: '<div class="light"><p><h3>杭州和达希尔顿逸林酒店</h3></p><p class="light">杭州市经济技术开发区金沙大道600号<br/>杭州, 浙江, 中国<br/>(86 571) 8989 8888<br/><a target="_blank" href="http://doubletree.com.cn/HGHHEDI/">杭州和达希尔顿逸林酒店</a>‎<br/></p></div>'
+      }
+    })
+
+  </script>
 <script type="text/javascript">
   var _gauges = _gauges || [];
   (function() {
