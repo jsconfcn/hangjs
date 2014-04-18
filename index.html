@@ -52,20 +52,22 @@
   </style>
 </head>
 <body>
+  <script id="tempalte" type="text/x-handlebars-template">
   <header id='header'>
     <section class='container'>
-	<div class='row'>
-	  <div class='column full'>
-			<a id="heroBtn" href='#hero'>首页</a>
-			<a id="aboutBtn" href='#about'>关于</a>
-			<!--<a id="mailBtn" href='#mail'>邮件列表</a>-->
-			<a id="speakersBtn" href='#speakers'>演讲嘉宾</a>
-      <a id="sponsorsBtn" href='#sponsors'>赞助商</a>
-			<a id="followBtn" href='#follow'>关注我们</a>
-      <a href='http://jsconf.cn'>往届大会</a>
-	  </div>	
-	</div>
-</section>
+    	<div class='row'>
+    	  <div class='column full'>
+    			<a id="heroBtn" href='#hero' data-i18n="home"></a>
+    			<a id="aboutBtn" href='#about' data-i18n="intro"></a>
+    			<!--<a id="mailBtn" href='#mail'>邮件列表</a>-->
+    			<a id="speakersBtn" href='#speakers' data-i18n="speakers"></a>
+          <a id="sponsorsBtn" href='#sponsors' data-i18n="sponsors"></a>
+    			<a id="followBtn" href='#follow' data-i18n="follow"></a>
+          <a href='http://jsconf.cn' data-i18n="eventsBefore"></a>
+          <a href="#" data-i18n="language" id="languageBtn"></a>
+    	  </div>	
+    	</div>
+    </section>
   </header>
 
   <section id='content'>
@@ -76,30 +78,30 @@
       <img src='http://jsconfcn.qiniudn.com/logo.png' alt='logo'/>
     </div>
     <div class='column two-thirds'>
-      <h1>JS中国开发者大会</h1>
-      <h2>2014年6月21-22日，杭州</h2>
+      <h1 data-i18n="conf.name"></h1>
+      <h2 data-i18n="conf.date"></h2>
     </div>
   </div>
   <div class='row' id='register' name='register'>
     <div class='column full'>
-      <p><a href='#'>售票尚未开始</a></p>
+      <p><a href='#' data-i18n="conf.ticketSelling"></a></p>
       <img src='http://jsconfcn.qiniudn.com/img.png' alt='screenshot'/>
     </div>
   </div>
   <div class='row' id='about' name='about'>
     <div class='column third'>
-      <h2>关于技术大会</h2>
+      <h2 data-i18n="intro"></h2>
     </div>
     <div class='column two-thirds'>
-      <p>杭JS——2014 JS中国开发者大会是一场专注于JavaScript和Node.js技术，为期两天的国际性技术大会。届时，大会会邀请国内外的优秀讲师为大家分享在JavaScript和Node.js技术方面的经验。大会将于6月21-22日在杭州召开。</p>
+      <p data-i18n="conf.description"></p>
     </div>
   </div>
   <div class='row' id='venue' name='about'>
     <div class='column third'>
-      <h2>会场地址</h2>
+      <h2 data-i18n="conf.addressTitle"></h2>
     </div>
     <div class='column two-thirds'>
-      <p><a href="http://doubletree.com.cn/HGHHEDI/" target="_blank">杭州和达希尔顿逸林酒店（DOUBLETREE By HILTON）</a></p>
+      <p><a href="http://doubletree.com.cn/HGHHEDI/" target="_blank" data-i18n="conf.venueAddress"></a></p>
       <p><div id="venue-map"></div></p>
     </div>
   </div>
@@ -137,19 +139,18 @@
 <section class='container'>
   <div class='row' id='speakers' name='speakers'>
     <div class='column third'>
-      <h2>演讲嘉宾</h2>
+      <h2 data-i18n="speakers"></h2>
     </div>
     <div class='column two-thirds'>
-      <p>你期待谁的出现？或者你就可以来发表演讲！</p>
-      <p><a href='https://github.com/jsconfcn/hangjs/issues'>推荐讲师</a></p>
+      <p data-i18n="conf.speakersComingSoon"></p>
     </div>
   </div>
   <div class='row' id='sponsors' name='sponsors'>
     <div class='column third'>
-      <h2>赞助商</h2>
+      <h2 data-i18n="sponsors"></h2>
     </div>
     <div class='column two-thirds'>
-      <p>感谢以下赞助商对大会的大力支持</p>
+      <p data-i18n="conf.sponsorsTitle"></p>
       <p>
         <ul>
           <li>
@@ -165,16 +166,16 @@
             <a href="http://wiredcraft.com/" target="blank"><img src="http://jsconfcn.qiniudn.com/img/wiredcraft.jpg" alt=""></a>
           </li>
         </ul>
-        <a href='mailto:goddyzhao@jsconf.cn?Subject=[HangJS]成为赞助商(Become a sponsor)'>成为赞助商</a>
+        <a href='mailto:goddyzhao@jsconf.cn?Subject=[HangJS]成为赞助商(Become a sponsor)' data-i18n="conf.applyForSponsor"></a>
       </p>
     </div>
   </div>
   <div class='row' id='follow' name='follow'>
     <div class='column third'>
-      <h2>关注我们</h2>
+      <h2 data-i18n="follow"></h2>
     </div>
     <div class='column two-thirds'>
-      <p>扫描下面<b>微信二维码</b>获取最新大会动态</p>
+      <p data-i18n="followText"></p>
       <p><img src="http://jsconfcn.qiniudn.com/img/weixin.png" alt=""></p>
     </div>
   </div>
@@ -200,10 +201,43 @@
   </div>
 </section>
   </footer>
+  </script>
 
   <!-- JS -->
   <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+  <script type='text/javascript' src="http://jsconfcn.qiniudn.com/lib/handlebars.js"></script>
+  <script type='text/javascript'>
+    var source = document.getElementById('tempalte').innerHTML;
+    var html =  Handlebars.compile(source)({});
+    document.body.innerHTML = html;
+  </script>
   <script type='text/javascript' src='http://jsconfcn.qiniudn.com/scripts.js'></script>
+  <script type='text/javascript' src='http://jsconfcn.qiniudn.com/lib/i18next.js'></script>
+  <script type='text/javascript'>
+    var m = window.location.search.match(/\?l=(zh-CN|en);?/);
+    var language = 'zh-CN';
+    if (m && m[1]) {
+      language = m[1];
+    }
+
+    i18n.init({
+      lng: language
+    }, function() {
+      $('body').i18n();
+      $('#languageBtn').click(function (evt) {
+        evt.preventDefault;
+        var changeTo;
+        if (language === 'zh-CN') {
+          changeTo = 'en'
+        } else if (language === 'en') {
+          changeTo = 'zh-CN';
+        }
+
+        window.location.href = '/?l=' + changeTo;
+      })
+    });
+
+  </script>
   <script type="text/javascript" src="http://jsconfcn.qiniudn.com/lib/scroll.js"></script>
   <script type="text/javascript" src="http://jsconfcn.qiniudn.com/lib/mapsapi.js"></script>
   <script type="text/javascript" src="http://jsconfcn.qiniudn.com/lib/gmaps.js"></script>

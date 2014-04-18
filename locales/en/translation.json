@@ -1,0 +1,23 @@
+{
+  "home": "Home",
+  "intro": "Intro",
+  "speakers": "Speakers",
+  "sponsors": "Sponsors",
+  "follow": "Follow US",
+  "eventsBefore": "All Events",
+  "language": "中文",
+
+  "conf": {
+    "name": "JSConf China",
+    "date": "21th-22th Jun, 2014, Hangzhou, China",
+    "ticketSelling": "Coming Soon",
+    "description": "杭JS 2014 is a two day conference focused on JavaScript and Node.js technologies. This developer driven event will bring together notable figures from both the Chinese and international JavaScript communities to share their knowledge and passion for JavaScript. The conference will be held in Hangzhou from June 21-22.",
+    "addressTitle": "Venue",
+    "venueAddress": "杭州和达希尔顿逸林酒店（DOUBLETREE By HILTON）",
+    "speakersComingSoon": "Coming Soon",
+    "sponsorsTitle": "Thanks all our sponsors",
+    "applyForSponsor": "Become our sponsor"
+  },
+
+  "followText": "Scan the following [WeChat] QR code to follow us"
+}
