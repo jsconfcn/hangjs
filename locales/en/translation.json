@@ -21,5 +21,10 @@
     "mediaPartnerTitle": "Thanks all the social media partners"
   },
 
-  "followText": "Scan the following [WeChat] QR code to follow us"
+  "followText": "Scan the following [WeChat] QR code to follow us",
+
+  "speaker": {
+    "yubo": "Yu Bo",
+    "guidao": "Xu Kai"
+  }
 }

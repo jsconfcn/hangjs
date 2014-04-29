@@ -76,6 +76,10 @@
       float: left;
       margin-right: 10px;
     }
+    
+    #content .speaker-list .speaker .speaker-into {
+      font-size: 0.8em;
+    }
 
     #content .speaker-list .speaker img {
       max-width: 130px;
@@ -96,7 +100,7 @@
           <a id="mediaPartnerBtn" href='#mediaPartner' data-i18n="mediaPartner"></a>
     			<a id="followBtn" href='#follow' data-i18n="follow"></a>
           <a href='http://jsconf.cn' data-i18n="eventsBefore"></a>
-          <a href="#" data-i18n="language" id="languageBtn"></a>
+          <a href="#" data-i18n="language" id="languageTrigger"></a>
     	  </div>	
     	</div>
     </section>
@@ -177,9 +181,15 @@
       <div>
         <ul class="speaker-list">
           <li class="speaker">
-            <a href="http://lifesinger.github.io" target="_blank">
+            <a href="http://lifesinger.github.io" target="_blank" title="玉伯 - Sea.js作者">
               <img src="http://jsconfcn.qiniudn.com/img/speaker-yubo.jpg?imageView/2/w/150" />
-              <label>玉伯</label>
+              <label data-i18n="speaker.yubo"></label>
+            </a>
+          </li>
+          <li class="speaker">
+            <a href="http://luics.github.io/" target="_blank" title="鬼道 - 天猫">
+              <img src="http://jsconfcn.qiniudn.com/img/speaker-guidao.jpg?imageView/2/w/150" />
+              <label data-i18n="speaker.guidao"></label>
             </a>
           </li>
         </ul>
@@ -285,7 +295,7 @@
       lng: language
     }, function() {
       $('body').i18n();
-      $('#languageBtn').click(function (evt) {
+      $('#languageTrigger').click(function (evt) {
         evt.preventDefault;
         var changeTo;
         if (language === 'zh-CN') {
@@ -293,7 +303,6 @@
         } else if (language === 'en') {
           changeTo = 'zh-CN';
         }
-
         window.location.href = '/?l=' + changeTo;
       })
     });

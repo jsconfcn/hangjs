@@ -21,5 +21,10 @@
     "mediaPartnerTitle": "感谢以下媒体合作商的大力支持"
   },
 
-  "followText": "扫描下面[微信二维码]获取最新大会动态"
+  "followText": "扫描下面[微信二维码]获取最新大会动态",
+
+  "speaker": {
+    "yubo": "玉伯",
+    "guidao": "鬼道（徐凯）"
+  }
 }
