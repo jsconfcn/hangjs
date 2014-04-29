@@ -3,6 +3,7 @@
   "intro": "大会简介",
   "speakers": "演讲嘉宾",
   "sponsors": "赞助商",
+  "mediaPartner": "媒体合作伙伴",
   "follow": "关注我们",
   "eventsBefore": "往届大会",
   "language": "English",
@@ -16,7 +17,8 @@
     "venueAddress": "杭州和达希尔顿逸林酒店（DOUBLETREE By HILTON）",
     "speakersComingSoon": "即将公布，敬请期待",
     "sponsorsTitle": "感谢以下赞助商对大会的大力支持",
-    "applyForSponsor": "成为赞助商"
+    "applyForSponsor": "成为赞助商",
+    "mediaPartnerTitle": "感谢以下媒体合作商的大力支持"
   },
 
   "followText": "扫描下面[微信二维码]获取最新大会动态"

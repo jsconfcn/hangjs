@@ -29,24 +29,40 @@
       height: 300px;
     }
 
-    #content #sponsors ul {
+    #content #sponsors ul, 
+    #content #mediaPartner ul {
       list-style: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
     }
-  
+    
+    #content #mediaPartner a {
+      background: transparent;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      color: #07d774;
+      display: inline-block;
+      padding: 4px 10px;
+      border: 2px solid #07d774;
+    }
 
-    #content #sponsors li {
+    #content #sponsors li,
+    #content #mediaPartner li {
       float: left;
       margin: 5px;
     }
 
-    #content #sponsors li a:hover{
+    #content #sponsors li a:hover,
+    #content #mediaPartner li a:hover {
       background: transparent;
     }
 
-    #content #sponsors li a img {
+    #content #sponsors li a img,
+    #content #mediaPartner li a img {
       background-size: 50% 50%;
     }
   </style>
@@ -62,6 +78,7 @@
     			<!--<a id="mailBtn" href='#mail'>邮件列表</a>-->
     			<a id="speakersBtn" href='#speakers' data-i18n="speakers"></a>
           <a id="sponsorsBtn" href='#sponsors' data-i18n="sponsors"></a>
+          <a id="mediaPartnerBtn" href='#mediaPartner' data-i18n="mediaPartner"></a>
     			<a id="followBtn" href='#follow' data-i18n="follow"></a>
           <a href='http://jsconf.cn' data-i18n="eventsBefore"></a>
           <a href="#" data-i18n="language" id="languageBtn"></a>
@@ -170,6 +187,26 @@
       </p>
     </div>
   </div>
+
+  <div class='row' id='mediaPartner' name='mediaPartner'>
+    <div class='column third'>
+      <h2 data-i18n="mediaPartner"></h2>
+    </div>
+    <div class='column two-thirds'>
+      <p data-i18n="conf.mediaPartnerTitle"></p>
+      <p>
+        <ul>
+          <li>
+            <a href="http://segmentfault.com/" target="blank"><img src="http://jsconfcn.qiniudn.com/img/segmentfault.png" alt=""></a>
+          </li>
+          <li>
+            <a href="http://www.broadview.com.cn/" target="blank"><img src="http://jsconfcn.qiniudn.com/img/broadview.png" alt=""></a>
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
   <div class='row' id='follow' name='follow'>
     <div class='column third'>
       <h2 data-i18n="follow"></h2>
