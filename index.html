@@ -65,6 +65,21 @@
     #content #mediaPartner li a img {
       background-size: 50% 50%;
     }
+
+    #content .speaker-list {
+      list-style: none;
+      overflow: hidden;
+    }
+
+    #content .speaker-list .speaker {
+      text-align: center;
+      float: left;
+      margin-right: 10px;
+    }
+
+    #content .speaker-list .speaker img {
+      max-width: 130px;
+    }
   </style>
 </head>
 <body>
@@ -159,7 +174,16 @@
       <h2 data-i18n="speakers"></h2>
     </div>
     <div class='column two-thirds'>
-      <p data-i18n="conf.speakersComingSoon"></p>
+      <div>
+        <ul class="speaker-list">
+          <li class="speaker">
+            <a href="http://lifesinger.github.io" target="_blank">
+              <img src="http://jsconfcn.qiniudn.com/img/speaker-yubo.jpg?imageView/2/w/150" />
+              <label>玉伯</label>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class='row' id='sponsors' name='sponsors'>
