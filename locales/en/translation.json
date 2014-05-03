@@ -24,7 +24,49 @@
   "followText": "Scan the following [WeChat] QR code to follow us",
 
   "speaker": {
-    "yubo": "Yu Bo",
-    "guidao": "Xu Kai"
+    "yubo": {
+      "name": "Bo Yu",
+      "description": "Sea.js Author"
+    },
+    "guidao": {
+      "name": "Kai Xu",
+      "description": "Tmall Developer"
+    },
+    "yanqing": {
+      "name": "Qing Yan",
+      "description": "Angularjs.cn Founder"
+    },
+    "sofish": {
+      "name": "Sofish",
+      "description": "Typo.css Author"
+    },
+    "mikaelkaron": {
+      "name": "Mikael Karon",
+      "description": "EF Learning Lab Architect"
+    },
+    "garryyao": {
+      "name": "Garry Yao",
+      "description": "EF Learning Lab Tech Lead"
+    },
+    "zhaocheng": {
+      "name": "Cheng Zhao",
+      "description": "Atom Dev"
+    },
+    "hemen": {
+      "name": "Hermen",
+      "description": "Taobao Developer"
+    },
+    "caesarchi": {
+      "name": "Caesar Chi",
+      "description": "MiCloud Developer"
+    },
+    "supeixin": {
+      "name": "Simon Su",
+      "description": "MiCloud Developer"
+    },
+    "guoyu": {
+      "name": "Yu Guo",
+      "description": "douban.fm(cli) Author"
+    }
   }
 }

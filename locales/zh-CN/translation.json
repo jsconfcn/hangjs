@@ -24,7 +24,49 @@
   "followText": "扫描下面[微信二维码]获取最新大会动态",
 
   "speaker": {
-    "yubo": "玉伯",
-    "guidao": "鬼道（徐凯）"
+    "yubo": {
+      "name": "玉伯",
+      "description": "Sea.js作者"
+    },
+    "guidao": {
+      "name": "鬼道（徐凯）",
+      "description": "天猫-Web开发者"
+    },
+    "yanqing": {
+      "name": "严清",
+      "description": "AngularJS中文站站长"
+    },
+    "sofish": {
+      "name": "Sofish",
+      "description": "Typo.css作者"
+    },
+    "mikaelkaron": {
+      "name": "Mikael Karon",
+      "description": "英孚教育平台架构师"
+    },
+    "garryyao": {
+      "name": "Garry Yao",
+      "description": "英孚教育资深工程师"
+    },
+    "zhaocheng": {
+      "name": "赵成",
+      "description": "Atom编辑器开发者"
+    },
+    "hemen": {
+      "name": "赫门",
+      "description": "淘宝-Web开发者"
+    },
+    "caesarchi": {
+      "name": "Caesar Chi",
+      "description": "MiCloud工程师"
+    },
+    "supeixin": {
+      "name": "苏培欣",
+      "description": "MiCloud工程师"
+    },
+    "guoyu": {
+      "name": "郭宇",
+      "description": "douban.fm(cli) 作者"
+    }
   }
 }
