@@ -67,6 +67,26 @@
     "guoyu": {
       "name": "Yu Guo",
       "description": "douban.fm(cli) Author"
+    },
+    "jameshalliday": {
+      "name": "James Halliday",
+      "description": "browserify Author"
+    },
+    "guillermorauch": {
+      "name": "Guillermo Rauch",
+      "description": "Socket.IO Author"
+    },
+    "fedorindutny": {
+      "name": "Fedor Indutny",
+      "description": "Node Core Developer"
+    },
+    "jonathanong": {
+      "name": "Jonathan Ong",
+      "description": "Koa.js Developer"
+    },
+    "juliangruber": {
+      "name": "Julian Gruber",
+      "description": "Review Author"
     }
   }
 }

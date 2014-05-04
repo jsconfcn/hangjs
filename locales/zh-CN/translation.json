@@ -67,6 +67,26 @@
     "guoyu": {
       "name": "郭宇",
       "description": "douban.fm(cli) 作者"
+    },
+    "jameshalliday": {
+      "name": "James Halliday",
+      "description": "browserify 作者"
+    },
+    "guillermorauch": {
+      "name": "Guillermo Rauch",
+      "description": "Socket.IO 作者"
+    },
+    "fedorindutny": {
+      "name": "Fedor Indutny",
+      "description": "Node Core开发者"
+    },
+    "jonathanong": {
+      "name": "Jonathan Ong",
+      "description": "Koa.js开发者"
+    },
+    "juliangruber": {
+      "name": "Julian Gruber",
+      "description": "Review作者"
     }
   }
 }
