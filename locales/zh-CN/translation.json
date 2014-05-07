@@ -59,11 +59,11 @@
     },
     "caesarchi": {
       "name": "Caesar Chi",
-      "description": "MiCloud工程师"
+      "description": "台湾Node社区负责人"
     },
     "supeixin": {
       "name": "苏培欣",
-      "description": "MiCloud工程师"
+      "description": "MiCloud台湾工程师"
     },
     "guoyu": {
       "name": "郭宇",
@@ -77,17 +77,13 @@
       "name": "Guillermo Rauch",
       "description": "Socket.IO 作者"
     },
-    "fedorindutny": {
-      "name": "Fedor Indutny",
-      "description": "Node Core开发者"
+    "belleveinvis": {
+      "name": "Belleve Invis",
+      "description": "Patrisika 作者"
     },
-    "jonathanong": {
-      "name": "Jonathan Ong",
-      "description": "Koa.js开发者"
-    },
-    "juliangruber": {
-      "name": "Julian Gruber",
-      "description": "Review作者"
+    "mk2": {
+      "name": "苏千",
+      "description": "Fawave作者"
     }
   }
 }

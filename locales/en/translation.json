@@ -59,7 +59,7 @@
     },
     "caesarchi": {
       "name": "Caesar Chi",
-      "description": "MiCloud Developer"
+      "description": "Hiiir Developer"
     },
     "supeixin": {
       "name": "Simon Su",
@@ -77,17 +77,13 @@
       "name": "Guillermo Rauch",
       "description": "Socket.IO Author"
     },
-    "fedorindutny": {
-      "name": "Fedor Indutny",
-      "description": "Node Core Developer"
+    "belleveinvis": {
+      "name": "Belleve Invis",
+      "description": "Patrisika Author"
     },
-    "jonathanong": {
-      "name": "Jonathan Ong",
-      "description": "Koa.js Developer"
-    },
-    "juliangruber": {
-      "name": "Julian Gruber",
-      "description": "Review Author"
+    "mk2": {
+      "name": "MK2",
+      "description": "Fawave Author"
     }
   }
 }
