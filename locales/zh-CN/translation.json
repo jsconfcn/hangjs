@@ -88,6 +88,10 @@
     "yutou": {
       "name": "芋头",
       "description": "大搜车前端Leader"
+    },
+    "berg": {
+      "name": "Berg",
+      "description": "百度轻应用架构师"
     }
   }
 }
