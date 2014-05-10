@@ -89,6 +89,38 @@
     #content .speaker-list .speaker img {
       max-width: 130px;
     }
+  
+    #content #schedule .schedule-date {
+      border-bottom: 1px solid #7d8a96;
+    }
+
+    #content .schedule-detail {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    #content .topic .time {
+      width: 10%;
+      text-align: center;
+      display: inline-block;
+    }
+
+    #content .topic .author{
+      width: 22%;
+      text-align: center;
+      color: #294762;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    #content .topic .title {
+      width: 65%;
+      text-align: center;
+      color: #294762;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
   </style>
 </head>
 <body>
@@ -100,7 +132,8 @@
     			<a id="heroBtn" href='#hero' data-i18n="home"></a>
     			<a id="aboutBtn" href='#about' data-i18n="intro"></a>
     			<!--<a id="mailBtn" href='#mail'>邮件列表</a>-->
-    			<a id="speakersBtn" href='#speakers' data-i18n="speakers"></a>
+          <a id="speakersBtn" href='#speakers' data-i18n="speakers"></a>
+    			<a id="scheduleBtn" href='#schedule' data-i18n="schedule"></a>
           <a id="sponsorsBtn" href='#sponsors' data-i18n="sponsors"></a>
           <a id="mediaPartnerBtn" href='#mediaPartner' data-i18n="mediaPartner"></a>
     			<a id="followBtn" href='#follow' data-i18n="follow"></a>
@@ -183,7 +216,6 @@
       <h2 data-i18n="speakers"></h2>
     </div>
     <div class='column two-thirds'>
-      <p data-i18n="conf.speakersNote"></p>
       <div>
         <ul class="speaker-list">
           <li class="speaker">
@@ -309,6 +341,151 @@
       </div>
     </div>
   </div>
+
+  <div class='row' id='schedule' name='schedule'>
+    <div class='column third'>
+      <h2 data-i18n="schedule"></h2>
+    </div>
+    <div class='column two-thirds'>
+      <p class="schedule-date" data-i18n="schedules.firstDay"></p>
+      <ul class="schedule-detail">
+        <li class="topic">
+          <span class="time" data-i18n="topic.0.time"></span>
+          <span class="author" data-i18n="topic.0.author"></span>
+          <span class="title" data-i18n="topic.0.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.1.time"></span>
+          <span class="author" data-i18n="topic.1.author"></span>
+          <span class="title" data-i18n="topic.1.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.2.time"></span>
+          <span class="author" data-i18n="topic.2.author"></span>
+          <span class="title" data-i18n="topic.2.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.3.time"></span>
+          <span class="author" data-i18n="topic.3.author"></span>
+          <span class="title" data-i18n="topic.3.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.4.time"></span>
+          <span class="author" data-i18n="topic.4.author"></span>
+          <span class="title" data-i18n="topic.4.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.5.time"></span>
+          <span class="author" data-i18n="topic.5.author"></span>
+          <span class="title" data-i18n="topic.5.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.6.time"></span>
+          <span class="author" data-i18n="topic.6.author"></span>
+          <span class="title" data-i18n="topic.6.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.7.time"></span>
+          <span class="author" data-i18n="topic.7.author"></span>
+          <span class="title" data-i18n="topic.7.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.8.time"></span>
+          <span class="author" data-i18n="topic.8.author"></span>
+          <span class="title" data-i18n="topic.8.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.9.time"></span>
+          <span class="author" data-i18n="topic.9.author"></span>
+          <span class="title" data-i18n="topic.9.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.10.time"></span>
+          <span class="author" data-i18n="topic.10.author"></span>
+          <span class="title" data-i18n="topic.10.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.11.time"></span>
+          <span class="author" data-i18n="topic.11.author"></span>
+          <span class="title" data-i18n="topic.11.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.12.time"></span>
+          <span class="author" data-i18n="topic.12.author"></span>
+          <span class="title" data-i18n="topic.12.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.13.time"></span>
+          <span class="author" data-i18n="topic.13.author"></span>
+          <span class="title" data-i18n="topic.13.title"></span>
+        </li>
+      </ul>
+      <p class="schedule-date" data-i18n="schedules.secondDay"></p>
+      <ul class="schedule-detail">
+        <li class="topic">
+          <span class="time" data-i18n="topic.14.time"></span>
+          <span class="author" data-i18n="topic.14.author"></span>
+          <span class="title" data-i18n="topic.14.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.15.time"></span>
+          <span class="author" data-i18n="topic.15.author"></span>
+          <span class="title" data-i18n="topic.15.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.16.time"></span>
+          <span class="author" data-i18n="topic.16.author"></span>
+          <span class="title" data-i18n="topic.16.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.17.time"></span>
+          <span class="author" data-i18n="topic.17.author"></span>
+          <span class="title" data-i18n="topic.17.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.18.time"></span>
+          <span class="author" data-i18n="topic.18.author"></span>
+          <span class="title" data-i18n="topic.18.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.19.time"></span>
+          <span class="author" data-i18n="topic.19.author"></span>
+          <span class="title" data-i18n="topic.19.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.20.time"></span>
+          <span class="author" data-i18n="topic.20.author"></span>
+          <span class="title" data-i18n="topic.20.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.21.time"></span>
+          <span class="author" data-i18n="topic.21.author"></span>
+          <span class="title" data-i18n="topic.21.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.22.time"></span>
+          <span class="author" data-i18n="topic.22.author"></span>
+          <span class="title" data-i18n="topic.22.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.23.time"></span>
+          <span class="author" data-i18n="topic.23.author"></span>
+          <span class="title" data-i18n="topic.23.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.24.time"></span>
+          <span class="author" data-i18n="topic.24.author"></span>
+          <span class="title" data-i18n="topic.24.title"></span>
+        </li>
+        <li class="topic">
+          <span class="time" data-i18n="topic.25.time"></span>
+          <span class="author" data-i18n="topic.25.author"></span>
+          <span class="title" data-i18n="topic.25.title"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <div class='row' id='sponsors' name='sponsors'>
     <div class='column third'>
       <h2 data-i18n="sponsors"></h2>

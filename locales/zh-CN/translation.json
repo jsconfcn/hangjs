@@ -2,6 +2,7 @@
   "home": "首页",
   "intro": "大会简介",
   "speakers": "演讲嘉宾",
+  "schedule": "大会议程",
   "sponsors": "赞助商",
   "mediaPartner": "媒体合作伙伴",
   "follow": "关注我们",
@@ -92,6 +93,168 @@
     "berg": {
       "name": "Berg",
       "description": "百度轻应用架构师"
+    }
+  },
+
+  "schedules": {
+    "firstDay": "2014-6-21",
+    "secondDay": "2014-6-22"
+  },
+
+  "topic": {
+    "0": {
+      "time": "08:15",
+      "author": "签到",
+      "title": ""
+    },
+
+    "1": {
+      "time": "09:15",
+      "author": "Goddy Zhao",
+      "title": "《JS中国开发者大会介绍》"
+    },
+
+    "2": {
+      "time": "09:50",
+      "author": "严清",
+      "title": "《Then.js 异步库的实现原理及优缺点》"
+    },
+
+    "3": {
+      "time": "10:35",
+      "author": "赵成",
+      "title": "《Atom编辑器嵌入Node.js引擎实践》"
+    },
+
+    "4": {
+      "time": "11:10",
+      "author": "赫门",
+      "title": "《淘宝前后端分离实践》"
+    },
+
+    "5": {
+      "time": "13:30",
+      "author": "抽奖",
+      "title": ""
+    },
+
+    "6": {
+      "time": "13:50",
+      "author": "苏培欣",
+      "title": "《Google BigQuery API Node.js实践》"
+    },
+
+    "7": {
+      "time": "14:30",
+      "author": "James Halliday",
+      "title": "《Peer-Directed Collaborative Projects》"
+    },
+
+    "8": {
+      "time": "15:15",
+      "author": "茶歇",
+      "title": ""
+    },
+
+    "9": {
+      "time": "15:30",
+      "author": "玉伯",
+      "title": "《如何持续技术学习》"
+    },
+
+    "10": {
+      "time": "16:00",
+      "author": "芋头",
+      "title": "《如何快速构建MVC应用》"
+    },
+
+    "11": {
+      "time": "16:30",
+      "author": "Berg",
+      "title": "《BlendUI - 让轻应用如Native般流畅》"
+    },
+
+    "12": {
+      "time": "17:15",
+      "author": "抽奖",
+      "title": ""
+    },
+
+    "13": {
+      "time": "19:00",
+      "author": "After Party",
+      "title": ""
+    },
+
+    "14": {
+      "time": "09:00",
+      "author": "Sofish",
+      "title": "《优化你的Angular Web App》"
+    },
+
+    "15": {
+      "time": "09:40",
+      "author": "郭宇",
+      "title": "《开源项目的管理与维护》"
+    },
+
+    "16": {
+      "time": "10:15",
+      "author": "Mikael Karon",
+      "title": "《Massive Javascript Development》"
+    },
+
+    "17": {
+      "time": "11:00",
+      "author": "Garry Yao",
+      "title": "《Scalable Web Application with TroopJS》"
+    },
+
+    "18": {
+      "time": "13:30",
+      "author": "抽奖"
+    },
+
+    "19": {
+      "time": "13:50",
+      "author": "Belleve Invis",
+      "title": "《Patrisika - Theoretical and Practical Code Generation》"
+    },
+
+    "20": {
+      "time": "14:35",
+      "author": "Caesar Chi",
+      "title": "《Node.js 與多方服務串接實務》"
+    },
+
+    "21": {
+      "time": "15:20",
+      "author": "茶歇",
+      "title": ""
+    },
+
+    "22": {
+      "time": "15:35",
+      "author": "Guillermo Rauch",
+      "title": "待定"
+    },
+
+    "23": {
+      "time": "16:20",
+      "author": "鬼道",
+      "title": "《Hybrid API》"
+    },
+
+    "24": {
+      "time": "17:00",
+      "author": "苏千",
+      "title": "《Java序列化的Node实现》"
+    },
+
+    "25": {
+      "time": "17:40",
+      "author": "抽奖",
+      "title": ""
     }
   }
 }

@@ -2,8 +2,9 @@
   "home": "Home",
   "intro": "Intro",
   "speakers": "Speakers",
+  "schedule": "Schedule",
   "sponsors": "Sponsors",
-  "mediaPartner": "Social Media Partner",
+  "mediaPartner": "Media Partner",
   "follow": "Follow US",
   "eventsBefore": "All Events",
   "language": "中文",
@@ -92,6 +93,168 @@
     "berg": {
       "name": "Berg",
       "description": "Baidu Architect"
+    }
+  },
+
+  "schedules": {
+    "firstDay": "2014-6-21",
+    "secondDay": "2014-6-22"
+  },
+
+  "topic": {
+    "0": {
+      "time": "08:15",
+      "author": "Sign In",
+      "title": ""
+    },
+
+    "1": {
+      "time": "09:15",
+      "author": "Goddy Zhao",
+      "title": "JSConf China Introduction"
+    },
+
+    "2": {
+      "time": "09:50",
+      "author": "Qing Yan",
+      "title": "Dive into Then.js"
+    },
+
+    "3": {
+      "time": "10:35",
+      "author": "Cheng Zhao",
+      "title": "Practice on embedding Node.js into Atom Editor"
+    },
+
+    "4": {
+      "time": "11:10",
+      "author": "Hermen",
+      "title": "How to decouple Frond-End from Backend in Taobao"
+    },
+
+    "5": {
+      "time": "13:30",
+      "author": "Lucky Draw",
+      "title": ""
+    },
+
+    "6": {
+      "time": "13:50",
+      "author": "Simon Su",
+      "title": "Node.js Practice on Google BigQuery API"
+    },
+
+    "7": {
+      "time": "14:30",
+      "author": "James Halliday",
+      "title": "Peer-Directed Collaborative Projects"
+    },
+
+    "8": {
+      "time": "15:15",
+      "author": "Tea Break",
+      "title": ""
+    },
+
+    "9": {
+      "time": "15:30",
+      "author": "Bo Yu",
+      "title": "Continuous Tech Learning"
+    },
+
+    "10": {
+      "time": "16:00",
+      "author": "Yu Tou",
+      "title": "Rapid MVC APP Development"
+    },
+
+    "11": {
+      "time": "16:30",
+      "author": "Berg",
+      "title": "BlendUI - work smoothly as native UI"
+    },
+
+    "12": {
+      "time": "17:15",
+      "author": "Lucky Draw",
+      "title": ""
+    },
+
+    "13": {
+      "time": "19:00",
+      "author": "After Party",
+      "title": ""
+    },
+
+    "14": {
+      "time": "09:00",
+      "author": "Sofish",
+      "title": "Improve the Performance of Angular Web APP"
+    },
+
+    "15": {
+      "time": "09:40",
+      "author": "Yu Guo",
+      "title": "Management and Maintainance of Open Source Projects"
+    },
+
+    "16": {
+      "time": "10:15",
+      "author": "Mikael Karon",
+      "title": "Massive Javascript Development"
+    },
+
+    "17": {
+      "time": "11:00",
+      "author": "Garry Yao",
+      "title": "Scalable Web Application with TroopJS"
+    },
+
+    "18": {
+      "time": "13:30",
+      "author": "Lucky Draw"
+    },
+
+    "19": {
+      "time": "13:50",
+      "author": "Belleve Invis",
+      "title": "Patrisika - Theoretical and Practical Code Generation"
+    },
+
+    "20": {
+      "time": "14:35",
+      "author": "Caesar Chi",
+      "title": "Connect Node.js with Difference Services"
+    },
+
+    "21": {
+      "time": "15:20",
+      "author": "Tea Break",
+      "title": ""
+    },
+
+    "22": {
+      "time": "15:35",
+      "author": "Guillermo Rauch",
+      "title": "To be determined"
+    },
+
+    "23": {
+      "time": "16:20",
+      "author": "Kai Xu",
+      "title": "Hybrid API"
+    },
+
+    "24": {
+      "time": "17:00",
+      "author": "MK2",
+      "title": "Java Serialization in Node"
+    },
+
+    "25": {
+      "time": "17:40",
+      "author": "Lucky Draw",
+      "title": ""
     }
   }
 }
