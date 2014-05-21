@@ -8,6 +8,12 @@
   "follow": "Follow US",
   "eventsBefore": "All Events",
   "language": "中文",
+  "note": "Note",
+  "note1": "You can go to the venue for registration directly if you buy the ticket for yourself", 
+  "note2": "If you buy the tickets for others, you HAVE TO send the invite code to them and ask them to fill the form for attendee",
+  "note3": "We will make badges with your name curved for those who bought tickets before 25th May. After that, you can get the same badge but without your name curved",
+  "note4": "All the kinds of tickets include the same service", 
+  "note5": "Sorry that we will NOT provide lunch", 
 
   "conf": {
     "name": "JSConf China",
