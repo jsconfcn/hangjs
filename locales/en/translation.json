@@ -88,9 +88,9 @@
       "name": "Belleve Invis",
       "description": "Patrisika Author"
     },
-    "mk2": {
-      "name": "MK2",
-      "description": "Fawave Author"
+    "luying": {
+      "name": "Luying Li",
+      "description": "Twitter Software Engineer"
     },
     "yutou": {
       "name": "Yu Tou",
@@ -253,8 +253,8 @@
 
     "24": {
       "time": "16:50",
-      "author": "MK2",
-      "title": "Java Serialization in Node"
+      "author": "Luying Li",
+      "title": "Storm - Distributed and fault-tolerant realtime computation"
     },
 
     "25": {

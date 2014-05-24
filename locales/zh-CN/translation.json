@@ -88,9 +88,9 @@
       "name": "Belleve Invis",
       "description": "Patrisika 作者"
     },
-    "mk2": {
-      "name": "苏千",
-      "description": "Fawave作者"
+    "luying": {
+      "name": "Luying Li",
+      "description": "Twitter软件工程师"
     },
     "yutou": {
       "name": "芋头",
@@ -253,8 +253,8 @@
 
     "24": {
       "time": "16:50",
-      "author": "苏千",
-      "title": "《Java序列化的Node实现》"
+      "author": "Luying Li",
+      "title": "《Storm - Distributed and fault-tolerant realtime computation》"
     },
 
     "25": {
