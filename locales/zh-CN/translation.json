@@ -99,6 +99,10 @@
     "berg": {
       "name": "Berg",
       "description": "百度轻应用架构师"
+    },
+    "cbf": {
+      "name": "陈本峰",
+      "description": "云适配 CEO"
     }
   },
 
@@ -258,7 +262,13 @@
     },
 
     "25": {
-      "time": "17:30",
+      "time": "17:15",
+      "author": "陈本峰",
+      "title": "Web Components标准：前端开发的新一次技术革命"
+    },
+
+    "26": {
+      "time": "17:40",
       "author": "抽奖",
       "title": ""
     }

@@ -99,6 +99,10 @@
     "berg": {
       "name": "Berg",
       "description": "Baidu Architect"
+    },
+    "cbf": {
+      "name": "Benfeng Chen",
+      "description": "Yunshipei CEO"
     }
   },
 
@@ -258,7 +262,13 @@
     },
 
     "25": {
-      "time": "17:30",
+      "time": "17:15",
+      "author": "Benfeng Chen",
+      "title": "Web Components：Evolution of Web Development"
+    },
+
+    "26": {
+      "time": "17:40",
       "author": "Lucky Draw",
       "title": ""
     }
