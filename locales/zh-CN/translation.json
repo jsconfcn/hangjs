@@ -143,13 +143,13 @@
     "4": {
       "time": "11:10",
       "author": "赫门",
-      "title": "《淘宝前后端分离实践》"
+      "title": "《淘宝前后端分离实践》| <a href='http://2014.jsconf.cn/slides/herman-taobaoweb/index.html' target='_blank'>slide</a> | video"
     },
 
     "5": {
       "time": "13:30",
       "author": "抽奖",
-      "title": ""
+      "title": "3个小米盒子 + 2个拍立得 + 10本书"
     },
 
     "6": {
@@ -191,7 +191,7 @@
     "12": {
       "time": "17:30",
       "author": "抽奖",
-      "title": ""
+      "title": "2个小米盒子 + 2个拍立得 + 10本书"
     },
 
     "13": {
@@ -215,18 +215,19 @@
     "16": {
       "time": "10:15",
       "author": "Mikael Karon",
-      "title": "《Massive Javascript Development》"
+      "title": "《Massive Javascript Development》| <a href='http://2014.jsconf.cn/slides/mikaelkaron-massivejs/massive-js.html' target='_blank'>slide</a> | video"
     },
 
     "17": {
       "time": "11:00",
       "author": "Garry Yao",
-      "title": "《Scalable Web Application with TroopJS》"
+      "title": "《Scalable Web Application with TroopJS》| <a href='http://2014.jsconf.cn/slides/garryyao-troopjs/scalable-web-application-with-troopjs.html' target='_blank'>slide</a> | video"
     },
 
     "18": {
       "time": "13:30",
-      "author": "抽奖"
+      "author": "抽奖",
+      "title": "5个小米盒子 + 1个拍立得"
     },
 
     "19": {
