@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: bold;
+    src: url('overpass-bold.eot');
+    src: url('overpass-bold.eot?#iefix') format('embedded-opentype'),
+         url('overpass-bold.woff') format('woff'),
+         url('overpass-bold.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 500;
+    src: url('overpass-regular.eot');
+    src: url('overpass-regular.eot?#iefix') format('embedded-opentype'),
+         url('overpass-regular.woff') format('woff'),
+         url('overpass-regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: normal;
+    src: url('overpass-light.eot');
+    src: url('overpass-light.eot?#iefix') format('embedded-opentype'),
+         url('overpass-light.woff') format('woff'),
+         url('overpass-light.ttf') format('truetype');
+}
+

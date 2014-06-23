@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+	<html class="base fullscreen loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Copy of Massive JS: Slides</title>
+		<meta name="description" content="Slides">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline.css">
+		<style id="user-css-output" type="text/css"></style>
+	</head>
+	<body class="reveal-viewport theme-font-palatino theme-color-beige-brown">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="8163d20ce73b3a6ba844fa95b74e0d0e" class=""><h1>Massive JS<br>
+</h1>
+<h2>JS application development at an enterprise level 
+</h2>
+<div>
+<a href="https://github.com/mikaelkaron" title="mikaelkaron@github">@mikaelkaron</a><br>EF Labs (Shanghai)</div>
+<div>englishtown.com</div>
+</section><section data-id="6c5711b70a6ed9f7d8e35406d599cd00" class="stack"><section class="" data-id="389d3de2533dcace002f042dbbbfa56b"><h2>Defining Massive</h2>
+<p>
+Big is something like <a href="https://jquery.com">jQuery</a> - a few modules, one-five maintainers, all modules synced in one release.</p>
+<p>
+Large is something like <a href="https://github.com">GitHub</a> - many separate modules, a few teams 
+working in separate areas, but one <em>core</em> front-end team focused on the 
+whole website.</p>
+<p>
+Massive is something like <a href="https://gmail.com">GMail</a> - many applications in one page, many different 
+teams collaborating, separate release cycles per team and application.</p>
+<p><br></p>
+
+
+
+
+
+</section><section data-id="755e8ee73f0f787825860953f1924561" class=""><h2>N applications - N teams<br>1 experience</h2>
+<p>In the usual enterprise environment we see <em>many</em> applications maintained by <em>many</em> different teams.</p>
+<p>A lot of the time these teams are not in the same group.</p>
+<ul>
+    <li>or the same department</li>
+    <li>or the same office</li>
+    <li>or even the same <em>company</em>
+</li>
+</ul>
+<p data-fragment-index="0" class="fragment">So naturally changes and releases are a <abbr title="Pain In The Ass">P.I.T.A</abbr> and communication often breaks down.</p>
+<p data-fragment-index="0" class="fragment">
+<em>But we still want it all to be <u>one</u> integrated and consistent experience.</em>
+</p>
+
+
+</section></section><section data-id="359f14c945a5cfd84dd960ba47294076" class="stack"><section class="" data-id="0da25b9903a23f89f337c745a8f2f891" data-background-size="initial"><h2>All your modules<br>are belong to us</h2>
+<p>The <em>first</em> rule of massive scale<br>JS application development is modularization.</p>
+<p>The <em>second</em> rule of massive scale<br>JS application development is <strong>modularization</strong>.</p>
+<p data-fragment-index="0" class="fragment">
+<em>Everything</em> should be a module</p>
+<ul data-fragment-index="0" class="fragment">
+    <li>your code</li>
+    <li>your templates</li>
+    <li>your styles</li>
+    <li>your data</li>
+</ul>
+
+
+</section><section data-id="dbc5bcdf5e0e9531faa9e808697f3b16" class=""><h2>Develop <em>small</em>
+</h2>
+<p>Make modules as small as possible<br>(without fragmenting your code to much)</p>
+<pstyle>This keeps your code:<p></p>
+<ul>
+    <li>easy to read <span data-fragment-index="0" class="fragment">...because there's less of it</span>
+</li>
+    <li>easy to maintain <span data-fragment-index="0" class="fragment">...as it's easier to debug and fix</span>
+</li>
+    <li>easy to use <span data-fragment-index="0" class="fragment">...and modify ...and extend</span>
+</li>
+</ul>
+<p data-fragment-index="1" class="fragment" style="margin-top: 1em;">Make sure your modules apply <a href="https://en.wikipedia.org/wiki/Separation_of_concerns" title="SoC@wikipedia">
+<abbr title="Separation Of Concerns">Separation of Concerns</abbr>
+</a>.
+</p>
+
+
+
+</pstyle></section><section data-id="a81557d685ee188fe7ec37111eab91d9" class=""><h2>Deploy big<em>ish</em>
+</h2>
+<p>Use a build tool to bundle modules that make sense in your context.</p>
+<ul style="margin-top: 1em;">
+    <li>Common reusable code packaged in a separate bundle.</li>
+    <li>Applications packaged in multiple bundles, by function.</li>
+    <li data-fragment-index="0" class="fragment">
+<strong>Massive</strong> application should be <u>split</u> into <u>smaller</u> applications.</li>
+</ul>
+<p data-fragment-index="1" class="fragment" style="margin-top: 1em;">On the server there's really no need for bundles.<br>For web go with multiple bundles, for mobile go with one.</p>
+
+
+
+
+
+
+
+
+</section></section><section data-id="f27d0ad5d5f27ac0b20a7f9bfeb55f5c" class="stack"><section class="" data-id="3e78d5cff34e51bec43073c660daedf2"><h2>Decouple</h2>
+<h3>Or why a message bus rocks</h3>
+<p>Let's try to learn something from our friend / foe<br>
+<em>the back-end developer</em>
+</p>
+<blockquote title="I just made this quote up to, again - no emo">In massive systems (and probably everywhere else) small, modular and distributed <strong>always</strong> beats large, monolithic and centralized</blockquote>
+<p data-fragment-index="0" class="fragment">This is why we have <a href="https://en.wikipedia.org/wiki/Enterprise_Integration_Patterns" title="eip@wikipedia">
+<abbr title="Enterprise Integration Patterns">EIP</abbr>
+</a>, <a href="https://en.wikipedia.org/wiki/Enterprise_service_bus" title="esb@wikipedia">
+<abbr title="Enterprise Service Bus">ESB</abbr>
+</a> and <a href="http://martinfowler.com/articles/microservices.html">micro services</a>.</p>
+<p data-fragment-index="1" class="fragment">Actually, this whole <a href="https://en.wikipedia.org/wiki/REST" title="rest@wikipedia">
+<abbr title="Representational State Transform">REST</abbr>
+</a> thing was invented for <em>server to server</em> integration way before all you <a href="https://en.wikipedia.org/wiki/DHTML" title="dhtml@wikipedia">
+<abbr title="Dynamic HTML">DHTML</abbr>
+</a> kiddies came along with <a href="https://en.wikipedia.org/wiki/AJAX" title="ajax@wikipedia">
+<abbr title="Asynchronous JavaScript and XML">AJAX</abbr>
+</a>.</p>
+
+
+
+
+
+
+
+
+
+</section><section data-id="b22c2b0b0013f080a8d628d82773c872" class=""><h2>What about the front-end?</h2>
+<p>Similar patterns can be applied in the front-end to, but instead of just connecting to the back-end, we connect <strong>components</strong>.</p>
+<p>You are probably already doing (some) of this with DOM events and event bubbling.</p>
+<blockquote data-fragment-index="0" class="fragment">
+<h3>A good rule of thumb</h3>
+When you are talking to a <em>logical</em> parent component use DOM events, when talking to any other component use a message bus
+</blockquote>
+<br>
+
+
+
+
+
+</section><section data-id="db5e3a40383da55c116592037cf321cd" class=""><h2>Integration</h2>
+<p>One of the advantages of using a message bus is that components can subscribe to changes without affecting the whole application.</p>
+<p>It also also allows the developer to swap out implementations of components without having to update all the dependent applications.</p>
+<p data-fragment-index="0" class="fragment">If you think about it, you can actually mock an entire component or application from the message bus, thus getting the same benefits we get when we mock the back-end.</p></section></section><section data-id="44e1ed3a1d616c4aaffca07e97f112d4" class="stack"><section data-id="1ff24e65c37293362b5e87a5ba5416b9" class=""><h2>Be <abbr title="Asynchronous">async</abbr>
+</h2>
+<blockquote>
+Asynchrony, in the general meaning, is the state of not being synchronized.<br>- <a href="https://wikipedia.org/wiki/Asynchrony" title="Asynchrony@wikipedia">Wikipedia</a>
+</blockquote>
+
+<p style="margin-top: 1em;">
+Unless you are <u>sure</u> whatever you are doing<br>
+<em>is and always will be synchronous</em>
+<br>
+<strong>go async</strong>.
+</p>
+
+<p data-fragment-index="0" class="fragment">Because things change:</p>
+<ul data-fragment-index="0" class="fragment">
+    <li>Your connection speed.</li>
+    <li>Your connection reliability.</li>
+    <li>The weather.</li>
+    <li>Solar flares.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section><section data-id="e4afb819a33c3a6d7a50087572c32ec2" class=""><h2>Be event driven</h2>
+
+<p style="margin-top: 1em;">Most of you are already doing this:</p>
+
+<ul>
+    <li>
+<a href="http://nodejs.org/api/events.html#events_class_events_eventemitter" title="event emitters@nodejs">Node.js event emitters</a>
+</li>
+    <li>
+<a href="https://en.wikipedia.org/wiki/DOM_events" title="DOM events@wikipedia">DOM events</a>
+</li>
+</ul>
+
+<p data-fragment-index="0" class="fragment" style="margin-top: 1em;">But you should think bigger:</p>
+
+<ul data-fragment-index="0" class="fragment">
+<li>
+<a href="https://en.wikipedia.org/wiki/Web_Sockets" title="websockets@wikipedia">Web sockets</a>
+</li>
+    <li>
+<a href="https://en.wikipedia.org/wiki/Swing_%28Java%29" title="swing@wikipedia">Swing</a>
+</li>
+<li>
+<a href="https://en.wikipedia.org/wiki/Akka_%28toolkit%29" tite="akka@wikipedia">Akka</a>
+</li>
+    <li>
+<a href="https://en.wikipedia.org/wiki/Erlang_%28programming_language%29" title="erlang@wikipedia">Erlang</a>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+</section><section data-id="0f60c175bf49ab855997de433f781bc5" class=""><h2>Be expressive, declarative<br>and stay DRY</h2>
+
+<blockquote>Don't forget to bring a towel<br>- <a href="http://www.towelday.org/">HGTTG</a> / <a href="http://en.wikipedia.org/wiki/Towelie" title="towlie@wikipedia">Towlie</a>
+</blockquote>
+
+<ul style="margin-top: 1em;">
+    <li>Be expressive - name your methods, chain operations, think about your URL structure.</li>
+    <li>Be declarative - <em>what</em> do we want to do instead of <em>how</em> do we do it.</li>
+    <li>
+<em>Do <u>not</u> repeat thyself!</em>
+</li>
+</ul>
+
+<p data-fragment-index="0" class="fragment" style="margin-top: 1em;">In the end it's all about <a href="http://en.wikipedia.org/wiki/Cognitive_load" title="cognitive load@wikipedia">congnitive load</a>.</p>
+
+
+
+
+
+
+
+
+</section></section><section data-id="39ab4e1ee2f8d830eba689e8a1eab019" class="stack"><section data-id="0ec91c51a94bb6638757759669baeec0" class=""><blockquote style="margin-top: 5em;">So we split our code into <strong>modules</strong> that are used in our <strong>applications</strong> then package them into <strong>bundles</strong>. What now?</blockquote>
+
+
+
+
+
+
+
+
+</section><section data-id="144ccd0dfc64160507cc51dc0ee30b72" class=""><h2>The root application</h2>
+<h3>
+<abbr title="also known as">AKA</abbr>
+<br>the one application to rule them all</h3>
+<ul style="margin-top: 1em;">
+    <li>Is the only guaranteed  <em>singular</em> application.</li>
+    <li>Is responsible for managing common services.</li>
+    <li>Is the container for other applications.</li>
+</ul>
+<h3 data-fragment-index="0" class="fragment" style="margin-top: 1em;">For example:</h3>
+<p data-fragment-index="1" class="fragment">If you are <a href="https://github.com">GitHub</a>
+<span data-fragment-index="2" class="fragment">, and you bubble events from everywhere</span>
+<span data-fragment-index="3" class="fragment">, and you catch them all at the top of the page</span>
+</p>
+<p data-fragment-index="4" class="fragment">you would probably call that piece of code the root application|controller|router|whatever</p>
+
+
+
+
+
+
+
+
+
+
+
+</section></section><section data-id="c5ee44dfbe4c7e0daed93a8bf24da1e9" class=""><h1 style="margin-top: 2em;">Questions?</h1></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":187290,"slug":"massive-js","title":"Copy of Massive JS","description":"","visibility":"all","published_at":"2014-06-22T00:01:09Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/garryyao/25f8f7/massive-js.jpg","view_count":0,"user":{"id":135463,"username":"garryyao","name":"Garry Yao","email":"yaojun85@gmail.com","description":null,"thumbnail_url":"https://lh5.googleusercontent.com/-mQ-AftU94tE/AAAAAAAAAAI/AAAAAAAAAAA/ohFbiDSe_1c/photo.jpg","pro":true,"enterprise":false,"notify_on_receipt":false,"billing_address":null,"registered":true},"background_transition":"fade","transition":"default","theme_id":null,"theme_font":"palatino","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":true,"center":true,"should_loop":false,"rtl":false,"notes":{}}};
+		</script>
+
+		<script>
+			SLConfig.current_user = {
+				name: "Garry Yao",
+				username: "garryyao",
+				pro: true
+			};
+		</script>
+
+		<script src="lib/head.min.js"></script>
+		<script src="lib/reveal.min.js"></script>
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				mouseWheel: false,
+
+				autoSlide: SLConfig.deck.auto_slide_interval || 0,
+				autoSlideStoppable: true,
+
+				rolling_links: SLConfig.deck.rolling_links || true,
+				center: SLConfig.deck.center || false,
+				loop: SLConfig.deck.should_loop || false,
+				rtl: SLConfig.deck.rtl || false,
+
+				transition: SLConfig.deck.transition,
+				backgroundTransition: SLConfig.deck.background_transition,
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+			if( SLConfig.deck.notes ) {
+				[].forEach.call( document.querySelectorAll( '.reveal .slides section' ), function( slide ) {
+
+					var value = SLConfig.deck.notes[ slide.getAttribute( 'data-id' ) ];
+					if( value && typeof value === 'string' ) {
+						slide.setAttribute( 'data-notes', value );
+					}
+
+				} );
+			}
+		</script>
+
+		
+
+	</body>
+</html>

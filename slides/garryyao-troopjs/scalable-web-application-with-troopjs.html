@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+	<html class="base fullscreen loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Scalable web application with TroopJS: Slides</title>
+		<meta name="description" content="Slides">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline.css">
+		<style id="user-css-output" type="text/css">.reveal pre code {
+  max-height: none;
+}
+</style>
+	</head>
+	<body class="reveal-viewport theme-font-palatino theme-color-beige-brown">
+		<div class="reveal">
+			<div class="slides">
+				<section class="stack" data-id="dbc01c26c86220cd9039dc17e6e417e4"><section class="" data-id="7e77116e8e38e7fe076400b8954aaca8"><h1>
+    <br>
+</h1>
+<h1>TroopJS</h1>
+<h2>
+</h2>
+<h2 style="font-style: normal; font-variant: normal;">
+<span style="font-size: 55.8px;">
+    <br>
+</span>
+</h2>
+<h2 style="font-style: normal; font-variant: normal;">
+<span style="font-size: 55.8px;">scalable web application</span>
+</h2>
+<div>
+<span>
+    <br>
+</span>
+</div>
+<div><br></div>
+<div>
+<a href="https://github.com/garryyao/">@garryyao</a>
+</div>
+<div><span>EF Labs (Shanghai)</span></div>
+<div>
+<span>englishtown.com</span><br>
+</div>
+<div>
+<br>
+</div>
+
+
+</section><section class="" data-id="2ea0979fd74c81057d0c228c2c14fcde" data-background-size="initial"><h2>The Troop</h2>
+<div><br></div>
+<div>
+<img src="scalable-web-application-with-troopjs/483341-troop.jpg"><br>
+</div></section></section><section class="stack" data-id="a4755a5f1b6ab852face89471ecfb222"><section class="" data-id="d86ed142c4e2b37b316725139111a0e7"><h2>what we miss here</h2>
+<div>
+<img src="scalable-web-application-with-troopjs/479582-collage.png" style="width: 683.5967520977067px; height: 531.4445429031554px; max-height: none; max-width: none;"> <br>
+</div>
+
+</section><section class="" data-id="1fc8d1dca7cfa503b13d993c6ab1d41c"><h2>
+<span style="font-size: 64.27604675292969px;">is not another <font color="#ee1f9a">featured</font></span><span style="font-size: 47.43px;"> library</span><br>
+</h2>
+<div>
+<h2 style="font-style: normal; font-variant: normal;">
+<span>but...</span><br>
+</h2>
+</div>
+<h2>
+<font style="font-size: 72px;" color="#ee1f9a">framework </font>that<font style="font-size: 72px;" color="#ee1f9a"> scales</font>
+</h2>
+</section><section class="" data-id="20d93a4c37b0dc247ef28feebd2550e0"><h2>
+    <br>
+</h2>
+<h2>library is...</h2>
+<div class="fragment" data-fragment-index="0">Attractive by doing one thing well,</div>
+<div class="fragment" data-fragment-index="1">can't stop from grabbing you after then</div>
+<h2 style="font-style: normal; font-variant: normal;">
+<br>
+</h2>
+<h2 style="font-style: normal; font-variant: normal;">
+<font color="#ee1f9a">framework</font> is...</h2>
+<div class="fragment" data-fragment-index="2">Does for you a few important things,</div>
+<div class="fragment" data-fragment-index="3">then stays out of your way</div>
+</section><section class="" data-id="cabd483192099fd141e1e9c0d0b02d9a"><h2>
+    <br>
+</h2>
+<h2>scalability is about...</h2>
+<div><span style="font-size: 47.43px;"><br></span></div>
+<div>
+<span style="font-size: 47.43px;">not just more functionalities</span><br>
+</div>
+<h3>
+<br> also...</h3>
+
+
+<h3 class="fragment" style="font-style: normal; font-variant: normal;" data-fragment-index="0">various requirements</h3>
+<h3 class="fragment" style="font-style: normal; font-variant: normal;" data-fragment-index="1">diverse libraries</h3>
+<h3 class="fragment" style="font-style: normal; font-variant: normal;" data-fragment-index="2">multiple devices</h3>
+<h3 class="fragment" style="font-style: normal; font-variant: normal;" data-fragment-index="3">different developers</h3>
+<h3 class="fragment" style="font-style: normal; font-variant: normal;" data-fragment-index="4">
+</h3>
+
+
+
+</section><section class="" data-id="367a7823979bf3a56cd7952d591ecbee"><h3>To be scalable</h3>
+<h2>the framework have to...</h2>
+</section><section class="" data-id="c870e09d0e577b1597758e91e01a8a02" data-background-size="initial"><h2>
+<span>NOT dictate!</span><br>
+</h2>
+<div><span><br></span></div>
+<h3>set your baseline</h3>
+<div><br></div>
+<h3>prescribe less</h3>
+<div><br></div>
+<h3>return more <font color="#ee1f9a">options</font> to developer</h3></section><section class="" data-id="bcb8b7fa76bab99248058a2053bb47c2"><h3></h3>
+<h2>
+    views<br>
+
+models<br>
+
+observables<br>
+
+bindings<br>
+
+templates<br>
+
+routers<br>
+
+controllers</h2>
+<br>
+
+
+
+
+
+
+
+</section><section class="" data-id="3da2f161301b27af61b9959ce555e064" data-background-size="initial" data-background-image="scalable-web-application-with-troopjs/470798-constrained.jpg"><h2><br></h2></section><section class="" data-id="2913273bb6ada179b93db96d5281087e"><h2>To be scalable</h2>
+<h2>you have to...</h2>
+</section><section class="" data-id="d73ab367d19f3c17b0047d9c32b7341a" data-background-image="scalable-web-application-with-troopjs/466931-unlearn.jpg" data-background-size="initial"><h2><br></h2></section><section class="stack" data-id="330d4f5a405be292a14632452cd930c6"><h2>
+    <br>
+</h2>
+<h2>Unlearn -&gt; Relearn</h2>
+<div>
+<br>
+</div>
+<div aria-hidden="true" style="display: block;" contenteditable="true">
+<div>RDBMS -&gt; NoSQL</div>
+<div>
+<span style="font-size: 36.084800720214844px; font-style: normal; font-variant: normal;">&lt;table&gt; -&gt; responsive</span>
+<br>
+</div>
+<div>callback -&gt; promise</div>
+<div>namespace -&gt; module</div>
+<div>animation -&gt; transition</div>
+</div>
+<div>
+<br>
+</div>
+<div>
+<br>
+</div>
+<h3>rid the ways that hold you back! </h3>
+
+</section><section class="" data-id="9ae2da4d7829e5b01887e3d71058bf04"><h2>
+    <del>views</del>
+</h2>
+<h2>
+<del>models</del>
+</h2>
+<h2>
+<del>observables</del>
+</h2>
+<h2>
+<del>bindings</del>
+</h2>
+<h2>
+<del>templates</del>
+</h2>
+<h2>
+<del>routers</del>
+</h2>
+<h2>
+<del>controllers</del>
+</h2>
+</section><section class="" data-id="4b6c0a084d871d2622f8ce3321a68f5c"><h2>
+<span style="font-size: 64.566px;">a </span><span style="font-size: 64.566px;"><font color="#ee1f9a">minimalist</font> </span><span style="font-size: 64.566px;">perspective</span><br>
+</h2>
+<div>
+<span>modularity</span><br>
+</div>
+<div>declarative<br>
+</div>
+<div>decoupled
+</div>
+<div>open-ended</div>
+<div><br></div>
+<div><span style="font-size: 47.43px;"><br></span></div>
+<div>
+<span style="font-size: 47.43px;">you can reduce all constructs to be just...</span><br>
+</div>
+<div><h2 class="fragment" data-fragment-index="0" style="font-style: normal; font-variant: normal;"><font color="#ee1f9a">components</font></h2></div>
+<div><br></div>
+</section><section class="" data-id="bb4f4c3cd97e9230aa2ca946e600ee8b"><h2>
+<span>break down to </span><br>
+</h2>
+<h2>the minimal reusables<br>
+</h2></section><section class="" data-id="be1d87720388f824294226e3d7f39f4b" data-background-image="scalable-web-application-with-troopjs/466119-component.jpg" data-background-size="initial"></section><section class="" data-id="df81fee266d1c5b0efe84cf0b6b43ee7"><h2>build up to <br>the maximum deliverable</h2>
+</section><section class="" data-id="0ce6d3236a1de4cfd9a6cc8c0e09f017" data-background-image="scalable-web-application-with-troopjs/466130-component2.jpg" data-background-size="initial"><h2><br></h2></section></section><section class="stack" data-id="24d176bca906488b16b33adc9bf18777"><section class="" data-id="c3e018efd3724e0059fe881ae1265ea6"><h2><span style="font-size: 47.43px;"><br></span></h2>
+<h2>TroopJS component</h2>
+<h2>
+<span style="font-size: 47.43px;">is standards </span><span style="font-size: 47.36130142211914px;">compliant</span><span style="font-size: 47.43px;"> built upon...</span><br>
+</h2>
+
+<div>
+<span><br>AMD</span> - <span>requireJS</span><br>
+</div>
+<div>
+<span>Promise</span> - <span>when</span>
+</div>
+<div>
+<span>ES5 </span> -  <span>poly</span>
+</div>
+</section><section class="" data-id="dc1a12d7832ff1ca04f6a53c7a737a34"><h2>
+    <br>
+</h2>
+<h2>
+<span style="font-size: 64.566px;">TroopJS </span>component</h2>
+<div>
+<div>
+    <br>
+</div>
+<div>AMD module that export constructor</div>
+<div>
+    <span>properties for describing behaviour</span>
+    <br>
+</div>
+<div>loosely coupled</div>
+<div>
+<span style="font-size: 36.084800720214844px; font-style: normal; font-variant: normal;">extendable &amp; mixable</span><br>
+</div>
+</div>
+<div>
+<div>
+    <span>has a </span>life-cycle, <span>registered and managed</span>
+</div>
+</div>
+<div>
+    <br>
+</div>
+
+
+</section><section class="" data-id="067112bae385863b1fedecded939aecc"><h2>a "ticker" component</h2>
+<div><br></div>
+<pre><code class="js">Component.extend(function(element, name, options) {
+  this.tick = element.data('start') || options.start;
+  this.inc = 1;
+}, {
+  "sig/start": function() {
+    this.interval = setInterval(this.ticking.bind(this), 1000);
+  },
+  "sig/render": function() {
+    this.html('<span>Elapsed: ' + this.tick + '</span>');
+  },
+  "hub/flip": function() {
+    this.inc = -this.inc;
+  },
+  "sig/stop": function() {
+    clearInterval(this.interval);
+  },
+  "ticking": function() {
+    this.tick += this.inc;
+    <span style="font-family: monospace; font-size: 20.297698974609375px; font-style: normal; font-variant: normal;">this.signal('render');</span>
+  }
+});
+</code></pre>
+<br>
+</section><section class="" data-id="ff992121f732fb7e210a739ff2f3870a"><h2>specials</h2>
+<div><br></div>
+<div>
+<span style="font-size: 36.185611724853516px; font-style: normal; font-variant: normal; text-align: left;">
+</span>
+</div>
+<div>
+<font color="#ee1f9a" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; text-align: left;">proactive</font> <span style="text-align: left;">method called by the framework</span><br>
+</div>
+<div>
+<span style="font-size: 36.185611724853516px; font-style: normal; font-variant: normal; text-align: left;">DOES NOT appears as regular object properties</span>
+</div>
+<div>distinguished from property name
+</div>
+<div>
+<div style="font-size: 36.185611724853516px; font-style: normal; font-variant: normal;">
+<br>
+</div>
+    <code style="text-align: center; ">
+<font color="#ee1f9a"> &lt;special&gt;[/&lt;type&gt;](arguments...) </font>
+</code>
+
+</div>
+
+
+
+<br>
+<div><br></div></section><section class="" data-id="8d8ee916e36ee8d64f045011f25617d3"><h2>
+    <span style="font-size: 64.566px;">more specials...<br>
+    </span>
+    <span>
+        <br>
+    </span>
+</h2>
+
+    <ul style="margin:auto">
+        <li>
+            <span style="text-align: center;">on/foo: handle a regular event "foo" emitted</span><br>
+        </li>
+        <li>
+            <span style="text-align: center;">sig/start : how the component start it's life-cycle</span>
+</li>
+<li>
+        <span style="text-align: center;">hub/foo/bar : subscribe to the hub topic "foo/bar"</span>
+        <br>
+        </li>
+<li>
+<span style="text-align: center;">dom/click('input[type="submit"]') : handle form submit event</span>
+        <br>
+</li>
+<li>
+        <span style="text-align: center;">route/change/blog/:id?/:search?/(page/:page)?` : listen for uri change of the specified pattern</span>
+</li>
+<li>
+<span style="text-align: center;">anything/else/...</span><br>
+</li>
+</ul>
+
+</section><section class="" data-id="e112269a86b0c27695187ca1698e5c1f"><p>when the <font color="#ee1f9a">same</font> special appears on the hierarchy of a component, <span style="text-align: left;"><font color="#ee1f9a">sequential</font> calls will guarantee the </span><span style="font-size: 36.185611724853516px; font-style: normal; font-variant: normal;">extended specials are always called <font color="#ee1f9a">ahead</font> of super</span> ones</p>
+<p><span><br></span></p>
+<div>
+<div style="font-size: 36.185611724853516px; font-style: normal; font-variant: normal;">
+<pre><code class="js"><code>var Parent = Component.extend({ 
+"sig/start": function(){
+ console.log("super");
+}});
+
+Parent.create({
+"sig/start": function(){
+  console.log("me");
+}}).signal("start");
+
+// "me", "super"
+</code></code></pre>
+</div>
+<div style="font-size: 36.185611724853516px; font-style: normal; font-variant: normal;">
+<br>
+</div>
+</div>
+</section><section class="" data-id="82cdfe91ce1d95ad83eae268ca27eec8"><h2>
+    <br>
+</h2>
+<h3>what? <span style="font-size: 47.43px;">all specials under the hood </span>
+</h3>
+<h3>are actually...</h3>
+<h2 style="font-style: normal; font-variant: normal;">
+<br>
+</h2>
+<div class="fragment" data-fragment-index="1">
+<h2 style="font-style: normal; font-variant: normal;" class="fragment" data-fragment-index="0">
+<font color="#ee1f9a">events</font>
+</h2>
+<div>
+<br>
+</div>
+<h3>the heart of powering <br>
+<span style="font-size: 47.43px;">all component's reactive methods</span>
+</h3>
+
+</div>
+</section><section class="" data-id="567a129efbafaf79ff30046687938d00"><pre><code class="js">Component.extend({
+  "sig/render": function() {
+    this.html('<span>Elapsed: ' + this.tick + '</span>');
+  },
+  "hub/flip": function() {
+    this.inc = -this.inc;
+  }
+});<span style="color: rgb(51, 51, 51); font-size: 47.43px; text-align: center; background-color: rgba(0, 0, 0, 0.0980392);"> </span></code></pre>
+<h3>is the same as doing...</h3>
+<pre class="fragment" data-fragment-index="0"><code class="js">Component.extend({
+  "sig/start": function() {
+    this.on("sig/render", function onRender() {
+      this.html('<span>Elapsed: ' + this.tick + '</span>');
+    });
+    this.on("hub/flip", function onFlip() {
+      this.inc = -this.inc;
+    });
+  }
+});
+</code></pre>
+<br>
+</section><section class="" data-id="c15a18b5b5968bd92bc44fa5991eee16"><h3><span><br></span></h3>
+<h3>
+<span>TroopJS event is </span><span style="font-size: 47.43px;">notably</span><span>...</span>
+</h3>
+<div><span><br></span></div>
+<div><h3 style="font-style: normal; font-variant: normal;">
+<font color="#ee1f9a">asynchronous</font><br>&amp;<br><font color="#ee1f9a">mutable</font>
+</h3></div>
+<h3>
+<span style="font-size: 47.43px;"><br>in clothes of Node's </span><a href="http://nodejs.org/api/events.html" style="font-size: 47.43px;">event emitter</a><span style="font-size: 47.43px;"> </span>
+</h3>
+<h3>
+<br><br>
+</h3>
+<div><br></div>
+<div><br></div></section><section class="" data-id="34e0f1719568d0a5212e5d84985e6693"><h2>a "login" component</h2>
+<p><br></p>
+<p>return a <font color="#ee1f9a">promise </font>in handler will block the emitting, and <br>value that <font color="#ee1f9a" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;">resolves</font> the promise will return to emit</p>
+<p><br></p>
+
+<pre><code class="js">Component.extend({
+  "sig/start": function() {
+    return this.emit("login", "troopjs", "******")
+      .spread(function(login_time) {
+        console.log("user logged in:", login_time);
+      });
+  },
+  "on/login": function onLogin(username, password) {
+    return $.ajax({
+      url: "/auth",
+      data: {user: username, passwd: password}
+    }).done(function() {
+      return +Date.now();
+    });
+  }
+});
+</code></pre>
+<br></section><section class="" data-id="833c7b92310e710e71224de0e53c893d"><p>
+<br>
+</p>
+<h2 style="font-style: normal; font-variant: normal;">handlers++</h2>
+<div>
+<br>
+</div>
+<div>do they run in parallel or in sequence?</div>
+<div>do they receive same arguments or muted ones?</div>
+<div>what's the return value for the emit?</div>
+<div>which handlers are to be called?</div>
+<div>
+<br>
+</div>
+<h2 class="fragment" data-fragment-index="0">it depends...</h2>
+</section><section class="" data-id="43a98f7abbdc8f0c050e55b62f614be6"><h2>
+<span style="font-size: 64.566px;">event runner</span><br>
+</h2>
+<div><br></div>
+<div>it's up to you to decide...<br><font color="#ee1f9a">how/which</font> event handlers are called with <font color="#ee1f9a">what</font><br>
+</div>
+<div><br></div>
+<h3><span><br></span></h3>
+<h3>runner for each event type
+</h3>
+<div><ul>
+<li>
+<span>signal - use async <span style="font-size: 36.084800720214844px; font-style: normal; font-variant: normal;">sequential</span> runner</span><br>
+</li>
+<li>dom event - use sync sequential runner</li>
+<li>hub event - use async pipelined runner</li>
+</ul></div>
+
+</section><section class="" data-id="092f3b7ca4b159805341034628d971b3"><pre><code class="js">this.emit({
+  type: 'login',
+  runner: function runHandlers(event, handlers, args) {
+    var CALLBACK = "callback", CONTEXT = "context";
+    var results = [], resultsCount = 0, count = 0;
+
+    var next = function(result, skip) {
+      var candidate;
+
+      // Store result if no skip
+      if (skip !== true) {
+        results[resultsCount++] = result;
+      }
+
+      // 1. run handlers one after the other;
+      // 2. pass each handler the original argument;
+      // 3. call each handler in scope of "context" property;
+      // 4. collect all return values from handlers;
+      return (candidate = handlers[count++])
+        ? when(candidate[CALLBACK].apply(candidate[CONTEXT], args), next)
+        : when.resolve(results);
+    };
+
+    return next(args, true);
+  }
+});
+</code></pre>
+
+<br>
+</section><section class="" data-id="9b6a0d0a07baf8cf985745f401b50d94"><h2>hub/...</h2>
+<h2 class="fragment" data-fragment-index="0">"asynchronous event bus"<br>
+</h2>
+<div>
+  <br>
+</div>
+<div class="fragment" data-fragment-index="1">
+  <ul>
+    <li>simply events fired on a <font color="#ee1f9a">singleton emitter</font><br>
+    </li>
+    <li>create delegation methods on each component</li>
+    <li>pub/sub model for cross-<span>components communication</span>
+</li>
+  </ul>
+</div>
+</section><section class="" data-id="d55f5079352a6af63bab0b060f6a29f8" data-background-size="initial" data-background-image="scalable-web-application-with-troopjs/478902-hub.jpg"><h2><br></h2></section><section class="" data-id="88b5ea32cfaff56f9ec4986ff0c5afcb"><p>
+<span style="text-align: left;">hub subscribers are running with the</span>
+<font color="#ee1f9a" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; text-align: left;">pipeline</font>
+<span>runner</span></p>
+<p style="text-align: center;"><span>prior one may</span> <span style="text-align: left;"><font color="#ee1f9a">block</font> and</span> <span style="text-align: left;"><font color="#ee1f9a">influence</font>
+</span><span>the next</span></p>
+<h3>
+<span style="text-align: left;">
+    <br>
+</span>
+</h3>
+<h3>
+<span style="text-align: left;">think of the UNIX pipe</span>
+</h3>
+<p>
+  <font color="#ee1f9a" style="font-family: inherit; font-weight: inherit; text-align: left;">
+    <br>
+  </font>
+</p>
+<pre><code class="js">// from one component
+one.publish("log", "info", "some message").spread(function (type, msg) {
+  // type and message are echo here.
+});
+
+// Adding timestamp.
+another.subscribe("log", function (type, msg) {
+  return [type, msg, Date.now()];
+});
+
+// Print the log message.
+someother.subscribe("log", function (type, msg, timestamp) {
+  console[type](msg + ' at ' + Date(timestamp));
+});</code></pre>
+<br>
+</section><section class="" data-id="bbebbb97b6bf9a87be4b4db24c40fdfa"><pre><code class="js">Component.extend({
+  "displayName": "login-component",
+  "hub/login": function onLogin(username, password) {
+    return $.ajax({
+      url: "/auth",
+      data: {user: username, passwd: password}
+    }).done(function() {
+      return +Date.now();
+    });
+  }
+});
+
+Component.extend({
+  "displayName": "user-component",
+  "sig/start": function onLogin() {
+    return this.publish("login", "troopjs", "******")
+      .spread(function(login_time) {
+         console.log("user logged in:", login_time);
+      });
+  }
+});
+</code></pre>
+
+<br>
+</section><section class="" data-id="494879280ff566209f5745bd8e8b8b1a"><h2><br></h2>
+<h2>composition<br>
+</h2>
+<div><br></div>
+<div>extend component with </div>
+<div><font color="#ee1f9a">constructors/spec/<span>components</span></font></div>
+<div><br></div></section><section class="" data-id="572166a53dbe7cd51a5c991b49e9f29c"><pre><code class="js">var Foo = <font color="#ee1f9a">Factory</font>(function Constructor() {
+  // constructing
+}, {
+  "something": function () {
+    // regular method
+  },
+  "something(special)": function () {
+    // a special method
+  }
+});
+
+var Bar = <font color="#ee1f9a">Foo.extend</font>({
+  "something(special)": function(){
+    // override parent special
+  },
+  "some/other/special": function () {
+    // a special method too
+  }
+});
+
+// instantiation
+Bar();
+new Bar();
+Bar.create();
+</code></pre>
+<div style="text-align: left;">
+<br>
+</div>
+<br>
+</section><section class="" data-id="224bcd07b642fe3e707fa8d50f4a3774"><h2>prototypal</h2>
+<div><br></div>
+<div>prototypal inheritance, <font color="#ee1f9a">hierarchical</font> prototype chain<br>
+</div>
+<div><br></div>
+<pre><code class="js">function inherit(Parent, Child) {
+  var proto;
+  if(Object.create){
+    proto = Object.create(Parent.prototype);
+  }
+  else {
+    var Surrogate = function(){};
+    Surrogate.prototype = Parent.prototype;
+    proto = new Surrogate;
+  }
+
+  Child.prototype = proto;
+}
+</code></pre>
+<div style="text-align: center;"><br></div>
+<br></section><section class="" data-id="d91ead2288d6bb8e635b790b64e907ba"><h2 style="font-style: normal; font-variant: normal;">compose</h2>
+<p style="font-style: normal; font-variant: normal;"><span><br></span></p>
+<p style="font-style: normal; font-variant: normal;"><span>object composition, </span><font color="#ee1f9a" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;">flattened/merged </font><span>properties</span></p>
+<div><span><br></span></div>
+<pre><code class="js">function compose(Parent, Child) {
+  var proto = {};
+  Object.getOwnPropertyNames(Parent.prototype).forEach(function (prop) {
+    proto[prop] = Parent.prototype[prop];
+  });
+  Child.prototype = proto;
+}
+</code></pre>
+<div style="text-align: left;"><br></div>
+<br></section><section class="" data-id="467d38cc24d184826f06170e54a91c79"><h2>pros</h2>
+<p><span><br></span></p>
+<p><span>a bit more performant</span><br></p>
+<p>a bit more secure</p>
+<div>a bit more interoperable</div></section></section><section class="stack" data-id="69c0a2019a3347559832feec4163bb65"><section class="" data-id="5c42d4614c654f6ef01307802cca2b51"><h3>
+    bring component to DOM as
+    <br>
+</h3>
+<div>
+<h2>
+<span><font color="#ee1f9a">
+    widget</font>
+</span>
+</h2>
+</div>
+<h3>
+declaratively, coincident of
+</h3>
+<h3>
+<br>
+</h3>
+<div>
+<a href="http://www.w3.org/TR/components-intro/#defining-a-custom-element">&lt;custom-element&gt;</a>
+</div>
+<div>
+<a href="https://docs.angularjs.org/guide/compiler">ng-directive</a>
+</div>
+<div>
+<a href="http://facebook.github.io/react/docs/jsx-in-depth.html">JSX</a>
+</div>
+<div>
+<br>
+</div>
+
+</section><section class="" data-id="867c7c7b806374d162910a900c035ea6"><p><span>describe behaviour of element </span></p>
+<pre><code class="html">&lt;ul <font color="#ee1f9a">data-weave="app/widget/dropdown"</font>&gt;
+  &lt;li&gt;troopjs&lt;li&gt;
+  &lt;li&gt;backbone&lt;li&gt;
+  &lt;li&gt;angular&lt;li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p><br></p>
+<p>alter behaviour with least cost</p>
+<pre><code class="html">&lt;ul <font color="#ee1f9a">data-weave="app/widget/sidenav"</font>&gt;
+  &lt;li&gt;troopjs&lt;li&gt;
+  &lt;li&gt;backbone&lt;li&gt;
+  &lt;li&gt;angular&lt;li&gt;
+&lt;/ul&gt;
+</code></pre>
+<div style="text-align: left;"><br></div>
+<br></section><section class="" data-id="4d56cc63ab6b6656efc7b2c9149fdd27"><h2>
+<span style="font-size: 64.566px;">mix-in widgets</span><span style="font-size: 64.566px;"> </span><br>
+</h2>
+<div>
+<br>
+</div>
+<div>
+separation of <font color="#ee1f9a">concerns</font>
+<br>
+</div>
+<div>
+<span style="font-size: 36.185611724853516px; font-style: normal; font-variant: normal;">multiple widgets coordinate on same element</span>
+<span style="font-size: 36.185611724853516px; font-style: normal; font-variant: normal;"> </span>
+<br>
+</div>
+<div>
+<br>
+</div>
+<pre><code class="html">&lt;form class="contact"
+data-weave="<font color="#ee1f9a">app/widget/form/contact, app/validation/form</font>"&gt;
+	&lt;fieldset&gt;
+		&lt;input name="name" placeholder="fullname name"/&gt;
+		&lt;input data-weave="app/validation/phonenumber" name="phone" placeholder="mobile number"/&gt;
+	&lt;/fieldset&gt;
+	...
+&lt;/form&gt;</code></pre>
+<br>
+</section><section class="" data-id="e5281c09665a3787e9032feae5978adf"><h2><span style="font-size: 64.566px;">widget properties</span></h2>
+<div><span style="font-size: 64.566px;"><br></span></div>
+<p>passing properties</p>
+<pre><code class="js">&lt;ul class="choices" data-weave="app/widget/navigation(<font color="#ee1f9a">'horizontal'</font>)"&gt;
+  ...
+&lt;/ul&gt;
+</code></pre>
+<div><span><br></span></div>
+<div>
+<span>to receive properties in </span><span>widget</span><br>
+</div>
+<pre><code class="js">Widget.extend(function($element, name, <font color="#ee1f9a">direction</font>){
+    if(<font color="#ee1f9a">direction</font> === "horizontal")
+      $element.style("float", "left");
+});
+</code></pre>
+<br></section><section class="" data-id="ef77cb1b86ec6cdf89afba7aca8da173"><h2>
+<span style="font-size: 64.566px;">weave</span><br>
+</h2>
+<div>instantiate and <font color="#ee1f9a">attach</font> widgets to element<br>
+</div>
+<div><br></div>
+<div><ol>
+<li>
+<span style="text-align: center;">instantiate all declared widgets in "data-weave"</span>
+</li>
+<li>
+<span style="text-align: center;">load widget modules</span><br>
+</li>
+<li>
+<span style="text-align: center;">instantiate and start widgets on DOM element</span>
+</li>
+<li>
+<span style="text-align: center;">removed from "data-weave" and to add "data-woven"</span><br>
+</li>
+</ol></div>
+
+
+
+
+</section><section class="" data-id="c2e32c66c4d01061be3a5f2fd9087ffc"><h2>
+<span>unweave</span><br>
+</h2>
+<div>
+<font color="#ee1f9a">detach</font> widgets from DOM</div>
+<div><br></div>
+<ol>
+<li>look for "data-unweave"</li>
+    <li>stop the specified weaved widgets</li>
+    <li>restore "data-weave" and to <span>remove "data-woven"</span>
+</li>
+</ol></section><section class="" data-id="3244bbcc90abc4a854785dddf7750b22"><h3>woven</h3>
+<pre><code class="html">&lt;ul class="choices" data-weave="app/widget/navigation"&gt;...&lt;/ul&gt;</code></pre>
+<pre><code class="js">weave.call($('.foo'));
+// OR
+$('.foo').weave();</code></pre>
+<pre><code class="html">&lt;ul class="choices" <font color="#ee1f9a">data-weave="" data-woven="app/widget/navigation@1"</font>&gt;...&lt;/ul&gt;
+</code></pre>
+<h3><br></h3>
+<h3>unwoven</h3>
+<pre><code class="js">unweave.call($('.foo'));
+// OR
+$('.foo').unweave();<br></code></pre>
+<pre><code class="html">&lt;ul class="choices" <font color="#ee1f9a">data-weave="<span style="font-family: monospace;">app/widget/navigation</span></font><span style="font-family: monospace;"><font color="#ee1f9a">" data-woven=""</font>&gt;...&lt;/ul&gt;</span></code></pre>
+<br></section><section class="" data-id="6314f934350fedcf5ba308353d32ba3d"><h2>widget tracking</h2>
+<pre><code class="js">
+$("[data-woven]").woven().then(function(woven){
+  // iterate over all woven elements.
+  woven.forEach(function(widgets){
+    // iterate over the widgets per element.
+    widgets.forEach(function(widget){
+      console.log(widget.$element.get(0), require.toUrl(widget.displayName));
+    });
+  });
+});
+</code></pre></section><section class="" data-id="2dda49c21bc397ba079f62b361cb4abb"><h3>on DOM removal</h3>
+<div>
+<span>utilize jquery event special</span><br>
+</div>
+<pre><code class="js">$.event.special.<font color="#ee1f9a">destroy</font> = {
+  "noBubble": true,
+  "trigger": function () { return false; },
+  <font color="#ee1f9a">"remove"</font>: function onDestroyRemove(handleObj) {
+    var me = this;
+    handleObj.handler.call(me, <font color="#ee1f9a">$.Event(handleObj.type)</font>);
+  }
+};
+</code></pre>
+<div style="text-align: center;">to trigger custom "destory" dom event that cleans up</div>
+<pre><code class="js">Widget.extend({
+  <font color="#ee1f9a">"dom/destroy"</font>: function() {
+    if (this.phase !== "finalize") {
+      <font color="#ee1f9a">unweave</font>.call(this[$ELEMENT]);
+    }
+  }
+});</code></pre>
+<br></section></section><section class="stack" data-id="925791930d9205c56c4a0990c4b7bbf5"><section class="" data-id="67d5efccd6f4b6acd0b2d488e31765fc"><h2>packages</h2>
+<div><br></div>
+<h3><ul>
+<li>
+<span style="text-align: center;">troopjs-compose</span>
+</li>
+<li><span style="text-align: center;">troopjs-core</span></li>
+<li><span>troopjs-dom</span></li>
+<li>
+<span style="font-size: 47.43px; text-align: center;">troopjs-data</span><br>
+</li>
+<li>
+<span style="font-size: 47.43px; text-align: center;">troopjs-util</span><br>
+</li>
+<li>
+<span style="font-size: 47.43px; text-align: center;">troopjs-net</span><br>
+</li>
+<li>
+<span style="text-align: center;">troopjs-jquery</span><br>
+</li>
+<li>troopjs-requirejs<br>
+</li>
+<li>
+<span style="text-align: center;">troopjs-opt</span><br>
+</li>
+<li><span style="font-size: 47.43px; text-align: center;">troopjs-contrib-*</span></li>
+</ul></h3>
+<div><br></div>
+<div><br></div>
+<div><br></div></section><section class="" data-id="3144e04cced8ab14362647a1e4dd5a2a"><h2>
+<span style="font-size: 64.566px;">compatibility</span><br>
+</h2>
+<div>
+<br>
+</div>
+<h3><span>troopjs-core+ </span></h3>
+<p><span>node + browser</span></p>
+<h3><br></h3>
+<h3><span>troopjs-dom </span></h3>
+<div>
+<span>browser </span><span style="font-size: 36.084800720214844px; font-style: normal; font-variant: normal;">(IE6+)</span><span style="font-size: 36.084800720214844px; font-style: normal; font-variant: normal; text-align: left;"> </span>
+</div>
+<p><br></p>
+<div>
+<ul>
+</ul>
+    </div>
+
+</section><section class="" data-id="2092695daaa6cc027f6505c4c6ac6209"><h2>footprint</h2>
+<h3>
+<font color="#ee1f9a">13k</font> minified + gzipped</h3></section><section class="" data-id="aa32be4bcff19893404daefbe2c27c03"><h2>feel like part of this troop?<br>
+</h2>
+<p>
+</p>
+<span>
+    <div style="text-align: center;">
+        <span>
+            <br>
+        </span>
+    </div>
+    <div style="text-align: center;">
+<ul>
+<li>
+<span style="text-align: center;">website -</span>
+<span style="text-align: center;"> </span>
+<span style="text-align: center;">
+<a href="http://troopjs.com">http://troopjs.com</a>
+</span>
+<br>
+</li>
+<li>
+<span style="text-align: center;">sample - <a href="http://todomvc.com/labs/dependency-examples/troopjs_require/">todomvc</a>
+</span>
+</li>
+<li>
+<span style="text-align: center;">code - </span>
+<span style="text-align: center;">
+<a href="https://github.com/troopjs/">https://github.com/troopjs</a>
+</span>
+</li>
+<li>
+<span style="text-align: center;">api docs - </span>
+<span style="text-align: center;">
+    </span>
+<a href="https://cdn.rawgit.com/troopjs/troopjs/build/3.x/docs/index.html" style="text-align: center;">http://troopjs.com/api</a>
+<br>
+</li>
+</ul>
+</div>
+</span>
+
+
+<div>
+<br>
+</div>
+<div>
+<img src="scalable-web-application-with-troopjs/483338-wechat.jpg" style="width: 274.78709941389974px; height: 278.055338318485px; max-height: none; max-width: none;"><img src="scalable-web-application-with-troopjs/469493-qrcode.png">
+</div>
+
+
+
+
+</section><section class="" data-id="8ee2a7c99e56e02a5ce7a3a66e677f9e"><h2>Thanks!</h2>
+
+
+
+</section></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":160397,"slug":"scalable-web-application-with-troopjs","title":"Scalable web application with TroopJS","description":"TroopJS presentation slides for JSConf.2014","visibility":"all","published_at":"2014-04-30T10:39:24Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/garryyao/23df54/scalable-web-application-with-troopjs.jpg","view_count":88,"user":{"id":135463,"username":"garryyao","name":"Garry Yao","email":"yaojun85@gmail.com","description":null,"thumbnail_url":"https://lh5.googleusercontent.com/-mQ-AftU94tE/AAAAAAAAAAI/AAAAAAAAAAA/ohFbiDSe_1c/photo.jpg","pro":true,"enterprise":false,"notify_on_receipt":false,"billing_address":null,"registered":true},"background_transition":"fade","transition":"fade","theme_id":null,"theme_font":"palatino","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":true,"center":true,"should_loop":false,"rtl":false,"notes":{"c870e09d0e577b1597758e91e01a8a02":"impose less constructs, stop of being aggressive\n\navoid taking proprietary approach\n\nbe friendly to other libraries\n\ndevelopers are aggressive and smarter than you can imgagine","d86ed142c4e2b37b316725139111a0e7":"any of those listed here, is definitely quite featured for building a particular type of application, even some steps on the others' teos\n\nbut people never stop dump and change to another","1fc8d1dca7cfa503b13d993c6ab1d41c":"now we really hate of rebasing ourselves once after a while, we want our base to be better not from the sense of feature, but scalability","20d93a4c37b0dc247ef28feebd2550e0":"we always start happily with the library, think it addresses my pain, but when it comes to grab you tight, you cannot breath","cabd483192099fd141e1e9c0d0b02d9a":"various types of app, single page, multi page, CRUD, data-driven\n\nonce you grab this library, does it play with the other ones?\n\nextjs had a hard time move it ass to the mobile\n\nmind set","3da2f161301b27af61b9959ce555e064":"do not wrap you framework with uncessarity","330d4f5a405be292a14632452cd930c6":"tech point of view, these are not advancing\njust different ways of thinking, but it's the things that you get used to hold you back from going scalable.","4b6c0a084d871d2622f8ce3321a68f5c":"there're a few intrinsic principles you must commit to\n\ncomponent is the least obtrusive construct that satisfy","ff992121f732fb7e210a739ff2f3870a":"like preserved methods of other library, never suppose to be invoked from outside","833c7b92310e710e71224de0e53c893d":"adding more handlers create more possiblities\n\nflight borrowed the dom event emitter","bcb8b7fa76bab99248058a2053bb47c2":"you wrap your minds with too much of constructs,  none of them are truly \"mandatory\"","df81fee266d1c5b0efe84cf0b6b43ee7":"grow your application by augmenting with more components","c15a18b5b5968bd92bc44fa5991eee16":"since everything of troop component is event relevant, it's quite important to make sure event emitting have to wait for something to complete."}}};
+		</script>
+
+		<script>
+			SLConfig.current_user = {
+				name: "Garry Yao",
+				username: "garryyao",
+				pro: true
+			};
+		</script>
+
+		<script src="lib/head.min.js"></script>
+		<script src="lib/reveal.min.js"></script>
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				mouseWheel: false,
+
+				autoSlide: SLConfig.deck.auto_slide_interval || 0,
+				autoSlideStoppable: true,
+
+				rolling_links: SLConfig.deck.rolling_links || true,
+				center: SLConfig.deck.center || false,
+				loop: SLConfig.deck.should_loop || false,
+				rtl: SLConfig.deck.rtl || false,
+
+				transition: SLConfig.deck.transition,
+				backgroundTransition: SLConfig.deck.background_transition,
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+			if( SLConfig.deck.notes ) {
+				[].forEach.call( document.querySelectorAll( '.reveal .slides section' ), function( slide ) {
+
+					var value = SLConfig.deck.notes[ slide.getAttribute( 'data-id' ) ];
+					if( value && typeof value === 'string' ) {
+						slide.setAttribute( 'data-notes', value );
+					}
+
+				} );
+			}
+		</script>
+
+		
+
+	</body>
+</html>
