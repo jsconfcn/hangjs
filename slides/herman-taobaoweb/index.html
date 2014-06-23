@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>淘宝前后端分离实践</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h2>淘宝前后端分离实践</h2>
+                    <p class="new-line">
+                        Created by <a href="http://weibo.com/threeday0905">赫门</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>who is this guy?</h2>
+
+                    <img class="left" src="img/self.jpg"/>
+
+                    <div class="right">
+                        <ul>
+                            <li>
+                                <strong>
+                                    Herman Lee
+                                    &nbsp;<img class="ico" src="img/taobao.png">&nbsp;
+                                    FED
+                                </strong>
+                            </li>
+
+                            <li>
+                                <strong>http://weibo.com/threeday0905</strong>
+                            </li>
+                        </ul>
+
+                        <br><br>
+                        <strong class="strong fragment pull-down pull-right block">
+                            (΄◉◞౪◟◉‵) &nbsp; ~ &nbsp; HI
+                        </strong>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>主题</h2>
+                </section>
+
+                <section>
+                    <h1>前后端分离</h1>
+                </section>
+
+                <section>
+                    <h2>現狀</h2>
+                </section>
+
+                <section>
+                    <img src="img/front-or-back-1.png">
+                </section>
+
+                <section>
+                    <img src="img/front-or-back-2.png">
+                </section>
+
+                <section>
+                    <h2>还是分离吧</h2>
+                </section>
+
+                <section>
+                    <h2>Why?</h2>
+                </section>
+
+                <section>
+                    <h3>就跟為什麼要代碼重構一樣</h3>
+                    <ul class="fragment">
+                        <li>关注点分离</li>
+                        <li>职责分离</li>
+                        <li>对的人做对的事</li>
+                        <li>更好的共建模式</li>
+                        <li>快速的反应变化</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>从几年前说起</h1>
+                </section>
+
+                <section>
+                    <h2>一、<strong class="strong">创业吧！</strong>弟兄們</h2>
+                </section>
+
+                <section>
+                    <img src="img/pig-friend.jpg" width="600px">
+                </section>
+
+                <section>
+                    <img src="img/only-me.png" width="480px">
+                </section>
+
+                <section>
+                    <h2>老子一個人全包了<strong class="strong">啊啊啊</strong></h2>
+                    <ul class="pull-down">
+                        <li>Roles: PM, DBA, RD, FED, Designer, ...</li>
+                        <li>Skills: Linux, MySQL, JAVA, JavaScript, HTML, CSS, ...</ll>
+                        <li>Tools: phpmyadmin, photoshop, powerpoint, ...</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>产品上线了</h2>
+                </section>
+
+                <section>
+                    <h2>后面维护的人</h2>
+                </section>
+
+                <section>
+                    <h3>开心的打开代码</h3>
+                    <img class="fragment" src="img/black-pot-1.jpg">
+                    <img class="fragment" src="img/black-pot-2.jpg">
+                    <p class="fragment">......是谁把<strong class="strong">手套</strong>放进锅子里面煮</p>
+                </section>
+
+                <section>
+                    <h1>.............</h1>
+                </section>
+
+                <section>
+                    <h2>二、<strong class="strong">重构！</strong>为了更好的未来</h2>
+                </section>
+
+                <section>
+                    <h2>Web Server的架构改造</h2>
+                </section>
+
+                <section>
+                    <h2>后端MVC时代</h2>
+                </section>
+
+                <section>
+                    <img src="img/back-end-mvc.png">
+                </section>
+
+                <section>
+                    <img src="img/everything-in-mind.png">
+                </section>
+
+                <section>
+                    <h3>前端: 那..我呢</h3>
+                </section>
+
+                <section>
+                    <h3>PM: 去套页面</h3>
+                </section>
+
+                <section>
+                    <h2>看似很美好的<strong class="strong">分工</strong></h2>
+                </section>
+
+                <section>
+                    <p>到了互联网时代</p>
+                    <h2 class="fragment strong pull-down">根本頂不住</h2>
+                </section>
+
+                <section>
+                    <img src="img/big-wave.jpg">
+                </section>
+
+                <section>
+                    <h2>三、<strong class="strong">互联网</strong>浪潮</h2>
+                </section>
+
+                <section>
+                    <h3>携手合作</h3>
+                </section>
+
+                <section>
+                    <img src="img/back-front-teamwork.png">
+                </section>
+
+                <section>
+                    <h3>Front-end Skills</h3>
+                    <img src="img/front-skill-tag-cloud-2.png">
+                </section>
+
+                <section>
+                    <h3>项目搞定了，但是</h3>
+                </section>
+
+                <section>
+                    <h1>The Problems</h1>
+                </section>
+
+                <section>
+                    <h3>前端代码越来越复杂</h3>
+
+                    <ul class="pull-down">
+                        <li>无法统一协作模式，代码充满了<strong class="strong">约定</strong></li>
+                        <li>JS跟CSS，依賴於<strong class="strong">後端產出</strong>的HTML</li>
+                        <li>有的数据來自AJAX，有的数据印在DOM上</li>
+                        <li>有的业务邏輯在前端，有的在Model层，更多的是在<strong class="strong">View层</strong></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>前后端依旧高度耦合</h3>
+
+                    <ul class="pull-down">
+                        <li>前端依赖服务端<strong class="strong">开发环境</strong></li>
+                        <li>在<strong class="strong">服务端View层</strong>高度耦合</li>
+                        <li>沟通成本高</li>
+                        <li>职责不清晰</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>View层谁来維護？</h3>
+                    <ul>
+                        <li class="pull-down">前端写Demo，后端套页面
+                            <ul class="fragment">
+                                <li>后端需要写<strong class="strong">HTML</strong></li>
+                                <li>前端仍然确认后端写的HTML</li>
+                            </ul>
+                        </li>
+
+                        <li class="pull-down">前端写View层，后端只管数据
+                            <ul class="fragment">
+                                <li>前端需要熟悉后端语言</li>
+                                <li>前端需要了解<strong class="strong">后端架构</strong></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>无法良好的支持跨终端</h3>
+                    <ul>
+                        <li><strong class="strong">业务逻辑</strong>散落在应用中</li>
+                        <li><strong class="strong">渲染逻辑</strong>强依赖后端页面</li>
+                        <li>只能用responsive design硬来</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>高度耦合的前后端分工</h3>
+                    <ul>
+                        <li>沟通成本上升</li>
+                        <li>维护成本上升</li>
+                        <li>无法正确且快速的响应变化</li>
+                        <li class="strong fragment">代码的腐烂只是迟早的问题</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <img width="360px" src="img/dog.gif">
+                </section>
+
+                <section>
+                    <h2>四、第一次前後端分離大戰</h2>
+                </section>
+
+                <section>
+                    <h2>Client-side <strong class="strong">MV*</strong> 时代</h2>
+                </section>
+
+                <section>
+                    <img src="img/client-side-mvc.jpg">
+                </section>
+
+                <section>
+                    <img src="img/client-side-mvc-funny.png">
+                </section>
+
+                <section>
+                    <h3>接口分離, 後端提供數據, 前端<strong class="strong">自己搞</strong></h3>
+                </section>
+
+                <section>
+                    <h3>Model层 - JavaScript Object</h3>
+                    <br>
+                    <h3>View层 - JavaScript Template</h3>
+                </section>
+
+                <section>
+                    <h3>业界满坑满谷的优秀方案</h3>
+                    <br>
+                    <p>Backbone, EmberJS, KnockoutJS, AngularJS, React, etc.</p>
+                </section>
+
+                <section>
+                    <h2>前后端职责清晰了</h2>
+                    <table class="pull-down w100">
+                        <thead>
+                            <tr><th>后端</th><th>前端</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>提供数据</li>
+                                        <li>处理业务逻辑</li>
+                                        <li>Server-side MVC架构</li>
+                                        <li>代码跑在服务器上</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>接收数据，返回数据</li>
+                                        <li>处理渲染逻辑</li>
+                                        <li>Client-side MV* 架构</li>
+                                        <li>代码跑在浏览器上</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h3>分離乾淨了，分工明確了，但是</h3>
+                </section>
+
+                <section>
+                    <h1>The Problems</h1>
+                </section>
+
+                <section>
+                    <h3>各层职责重叠，并且各玩各的</h3>
+                    <ul class="pull-down">
+                        <li class="fragment">Client-side Model 是 Server-side Model <strong class="strong">的加工</strong></li>
+                        <li class="fragment">Client-side View 跟 Server-side是 <strong class="strong">不同层次</strong>的东西</li>
+                        <li class="fragment">Client-side的Controller 跟 Sever-side的Controller <strong class="strong">各搞各的</strong></li>
+                        <li class="fragment">Client-side的Route 但是 Server-side <strong class="strong">可能没有</strong></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>性能问题</h3>
+                    <ul>
+                        <li>渲染，取值都在<strong class="strong">客户端</strong>进行，有性能的问题</li>
+                        <li>需要等待资源到齐才能进行，会有短暂<strong class="strong">白屏</strong>与闪动</li>
+                        <li>在移动设备<strong class="strong">低速网路</strong>的体验奇差无比</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>重用问题</h3>
+                    <ul>
+                        <li><strong class="strong">模版</strong>无法重用，造成维护上的麻烦与不一致</li>
+                        <li><strong class="strong">逻辑</strong>无法重用，前端的校验后端仍须在做一次</li>
+                        <li><strong class="strong">路由</strong>无法重用，前端的路由在后端未必存在</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>跨终端问题</h3>
+                    <ul>
+                        <ul>
+                            <li><strong class="strong">业务</strong>太靠前，导致不同端重复实现</li>
+                            <li><strong class="strong">逻辑</strong>太靠前，造成维护上的不易</li>
+                        </ul>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>SEO问题</h3>
+                    <p>渲染都在客户端，模版无法重用，<strong class="strong">SEO实现</strong> 麻烦</p>
+                </section>
+
+                <section>
+                    <img width="360px" src="img/wtf.gif">
+                </section>
+
+                <section>
+                    <h2>五、第二次前后端分离大战</h2>
+                </section>
+
+                <section data-transition="slide" data-background="#4d7e65" >
+                    <h1>进入主题</h1>
+                </section>
+
+                <section>
+                    <h2>重新定义前后端</h2>
+                </section>
+
+                <section>
+                    <h2>传统认知的前后端</h2>
+                    <img class="w100" src="img/work-mode-1.png">
+                </section>
+
+                <section>
+                    <h3>是依照 <strong class="strong">工作职责</strong>来划分的前后端</h3>
+                    <h3 class="pull-down">还是依照 <strong class="strong">硬体环境</strong>划分的前后端？</h3>
+                </section>
+
+                <section>
+                    <h2>因為有了<strong class="strong">NodeJS</strong></h2>
+                    <p class="fragment pull-down">我们有机会从工作职责上</p>
+                    <p class="fragment">重新定义前后端的分层</p>
+                </section>
+
+                <section>
+                    <h2>重新定义的前后端</h2>
+                    <img class="w100" src="img/work-mode-2.png">
+                </section>
+
+                <section>
+                    <h3>在服务器(JAVA) 与 浏览器(JS)的中间</h3>
+                    <h3 class="pull-down">架了一个中间层(<strong class="strong">NodeJS</strong>)</h3>
+                </section>
+
+                <section>
+                    <h2>Why NodeJS</h2>
+                    <h3 class="fragment strong pull-down">因为这个场子叫做杭JS</h3>
+                </section>
+
+                <section>
+                    <h1>.............</h1>
+                </section>
+                <section>
+                    <h2>Why NodeJS</h2>
+                    <ul class="fragment">
+                        <li>前端熟悉的语言，<strong class="strong">學習成本低</strong></li>
+                        <li>都是JS，可以<strong class="strong">前后端复用</strong></li>
+                        <li>体质适合：<strong class="strong">事件驱动</strong>、<strong class="strong">非阻塞I/O</strong></li>
+                        <li>适合<strong class="strong">IO密集型业务</strong></li>
+                        <li>执行速度也不差</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>职责划分</h2>
+                </section>
+
+                <section>
+                    <table class="pull-down w100" style="font-size:75%;">
+                        <thead>
+                            <tr><th class="center"><h3>后端</h3></th><th colspan="2" class="center"><h3>前端</h3></th></tr>
+                            <tr><th colspan="2" class="center">服务器</th><th class="center">浏览器</th></tr>
+                            <tr><th class="center">JAVA</th><th class="center">NodeJS</th><th class="center">JS + HTML + CSS</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <ul>
+                                        <li>服务层</li>
+                                        <li>提供数据接口</li>
+                                        <li>维持数据稳定</li>
+                                        <li>封装业务逻辑</li>
+                                    </ul>
+                                </td>
+                                <td style="vertical-align: top;">
+                                    <ul>
+                                        <li>跑在<strong class="strong">服務器</strong>上的JS</li>
+                                        <li>转发数据，串接服务</li>
+                                        <li>路由设计，控制逻辑</li>
+                                        <li>渲染页面，体验优化</li>
+                                        <li>更多的可能</li>
+                                    </ul>
+                                </td>
+                                <td style="vertical-align: top;">
+                                    <ul>
+                                        <li>跑在<strong class="strong">浏览器</strong>上的JS</li>
+                                        <li>CSS、JS加載與運行</li>
+                                        <li>DOM操作</li>
+                                        <li>任何的前端框架與工具</li>
+                                        <li>共用模版、路由</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h3>职责清晰的架構 + 前端范围的扩展 = </h3>
+
+                    <h2 class="fragment pull-down strong">更多的可能</h2>
+                </section>
+
+                <section data-transition="slide" data-background="#4d7e65" >
+                    <h1>实际示例</h1>
+                </section>
+
+                <section>
+                    <h2>淘宝首页优化</h2>
+                </section>
+
+                <section>
+                    <h3>需求</h3>
+                    <p class="pull-down">静态资料展示，方便运营管理</p>
+                    <p>更好的承载密集且庞大的流量</p>
+                </section>
+
+
+                <section>
+                    <h3>解决方案</h3>
+                    <p class="pull-down"><strong class="strong">页面缓存</strong>与定时刷新，返回缓存资料</p>
+                    <p>NodeJS产出<strong class="strong">静态页面</strong>到CDN，定时刷新</p>
+                </section>
+
+                <section>
+                    <img src="img/taobao-fp.png" style="width: 800px">
+                </section>
+
+                <section>
+                    <h2>淘宝详情页优化</h2>
+                </section>
+
+                <section>
+                    <h3>需求</h3>
+                    <p class="pull-down">单日四亿PV，页面数据来自各个不同接口</p>
+                    <p>为了不影响体验，先产生页面框架后</p>
+                    <p>在发起<strong class="strong">多个异步请求</strong>取数据更新页面</p>
+                    <p>这些多出来的请求带来的影响不小，尤其在<strong class="strong">无线端</strong></p>
+                </section>
+
+                <section>
+                    <h3>解决方案</h3>
+                    <p class="pull-down">在NodeJS端使用 <strong class="strong">Bigpiper</strong> 技术</p>
+                    <p>合并请求，降低负担</p>
+                    <p>分批输出，不影响体验</p>
+                </section>
+
+                <section>
+                    <h2>接口性能优化</h2>
+
+                    <p class="pull-down">拆分大接口为独立小接口，并发请求</p>
+                    <p><strong class="strong">串行 => 并行</strong>，大幅缩短请求时间</p>
+                </section>
+
+                <section>
+                    <h2>部属优化</h2>
+
+                    <p class="pull-down">一台NodeJS对多台JAVA服务器</p>
+                    <p><strong class="strong">合理的分配服务器</strong>带来最大的产出</p>
+                </section>
+
+                <section>
+                    <h2>页面渲染优化</h2>
+
+
+                    <ul class="pull-down">
+                        <li>前后端<strong class="strong">共享模版</strong></li>
+                        <li>首屏<strong class="strong">服务器</strong>渲染</li>
+                        <li>次屏<strong class="strong">浏览器</strong>渲染</li>
+                        <li>局部刷新<strong class="strong">浏览器</strong>渲染</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h2>单页面应用优化</h2>
+
+                    <ul class="pull-down">
+                        <li>前后端<strong class="strong">共享路由</strong>与模版</li>
+                        <li>前端换页，浏览器端渲染</li>
+                        <li>直接输入网址，服务器渲染</li>
+                        <li><strong class="strong">SEO问题</strong>迎刃而解</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h2>可靠性优化</h2>
+
+                    <p class="pull-down">单元测试，页面测试，回归测试，持续集成</p>
+                </section>
+
+                <section>
+                    <h2>更多的可能</h2>
+                </section>
+
+                <section>
+                    <img src="img/so-happy.png">
+                </section>
+
+                <section data-transition="slide" data-background="#4d7e65" >
+                    <h1>具体的改造</h1>
+                </section>
+
+                <section>
+                    <ul>
+                        <li><h3>接口服务化</h3></li>
+                        <li class="pull-down"><h3>代码模块化</h3></li>
+                        <li class="pull-down"><h3>功能组件化</h3></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>服務化</h2>
+                    </section>
+
+                    <section>
+                        <h3>接口规范</h3>
+                        <ul>
+                            <li>基于 <a href="http://json-schema.org/">JSON Schema</a></li>
+                            <li>增强 在 请求与返回 的 <strong class="strong">条件描述</strong></li>
+                            <li>扩展 <strong class="strong">format</strong> ，增加业务定义</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>接口管理平台</h3>
+                        <ul>
+                            <li>自动化管理文档，提供以下功能</li>
+                            <li><strong class="strong">版本</strong>管理 - 比较, 合并, 历史记录</li>
+                            <li>应用<strong class="strong">发布</strong> - 应用灰度, 应用回滚</li>
+                            <li>接口<strong class="strong">验证</strong> - 格式验证, 回归测试</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>接口模拟</h3>
+                        <ul>
+                            <li>透过 <strong class="strong">接口定义</strong> 产生 <strong class="strong">模拟数据</strong></li>
+
+                            <li>前端不需等待后端的接口，即可开始开发业务</li>
+                            <li>基于不同条件产生模拟数据，测试 <strong class="strong">边界情况</strong></li>
+                            <li>后端的接口必须通过接口验证，降低 <strong class="strong">联调成本</strong></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>NodeJS - 模块支持</h3>
+                        <ul>
+                            <li><strong class="strong">抽象支持</strong>不同接口 - HTTP，MySQL，etc. </li>
+                            <li>Data Proxy - 只负责数据通讯与<strong class="strong">搬运</strong></li>
+                            <li>前端开发不需关注实践细节，仅使用数据</li>
+                            <li>后续迁移成本低</li>
+                            <li>与接口管理平台整合</li>
+
+                        </ul>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h2>模块化</h2>
+                    </section>
+
+                    <section>
+                        <p>越来越多人重视浏览器端JS的模块化</p>
+                        <p>但也是有项目是一个jQuery走到底</p>
+                        <br>
+                        <p>但到了服务器端的NodeJS</p>
+                        <p>模块化是一个必须遵守的标准</p>
+                    </section>
+
+                    <section>
+                        <p>但是我们写的JS模块</p>
+                        <h3 class="fragment pull-down">并不仅限于 <strong class="strong">NodeJS</strong>端</h3>
+                    </section>
+
+                    <section>
+                        <h3>Everything is Module</h3>
+
+                        <table class="pull-down put-center">
+                            <tr><td>Model</td><td>Helper</td><td>Utility</td></tr>
+                            <tr><td>View</td><td>CSS</td><td>DOM Event</td></tr>
+                            <tr><td>Controller</td><td>Route</td><td>etc...</td></tr>
+                            <tr><td colspan="3">Other Libraries, ...</td></tr>
+                        </table>
+
+                    </section>
+
+                    <section>
+                        <h2>模块选型</h2>
+
+                        <h3 class="pull-down fragment">毫无疑问的 <strong class="strong">CommonJS</strong></h3>
+
+                        <h3 class="pull-down fragment">加上 <strong class="strong">工具支持</strong> <strong class="fragment">输出成不同规范</strong> </h3>
+
+                        <br>
+                        <i class="pull-down fragment">CommonJS, CMD, AMD, KMD, WhateverMD</i>
+                    </section>
+
+                    <section>
+                        <h3>前后端复用</h3>
+                        <ul class="pull-down">
+                            <li>透过一致的模块规范，加上都是用JS编写</li>
+                            <li><strong class="strong">模版</strong>可重用在浏览器端与服务器端</li>
+                            <li><strong class="strong">模型与方法</strong>可重用在浏览器端与服务器端</li>
+                            <li><strong class="strong">控制与路由</strong>可重用在浏览器端与服务器端</li>
+                            <li>或是更多的可能</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>模块预处理</h3>
+
+                        <p class="pull-down">除了 CommonJS标准 转换外，</p>
+                        <p>是否能做其他预处理？</p>
+                    </section>
+
+                    <section>
+                        <h3>模块预处理</h3>
+
+                        <ul>
+                            <li>JS Convert：coffee script, dart, etc.</li>
+                            <li>ES6 Complier：Traceur-Complier, <a href="https://github.com/army8735/jsdc">JSDC</a>, etc.</li>
+                            <li>CSS Complier：sass, less, stylus, etc.</li>
+                            <li>共用模块加载：polyfill, etc.</li>
+                            <li>业务预处理</li>
+                            <li>其他的可能</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>这都是之前的分工模式下很难做到的</h3>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>组件化</h2>
+                    </section>
+
+                    <section>
+                        <h3>封装</h3>
+                        <p>把细粒度的模块封装成应付业务需求的组件</p>
+                    </section>
+
+                    <section>
+                        <h3>组合</h3>
+                        <p>挑选不同的组件，完成实际的应用</p>
+                    </section>
+
+                    <section>
+                        <h3>多型</h3>
+                        <p>针对不同环境，<strong class="strong">单一组件</strong> 可具备 <strong class="strong">不同型态</strong></p>
+                        <p class="pull-down">同一组件在不同环境下可以有不同的行为</p>
+                        <p class="pull-down strong fragment">但是共用同样的逻辑</p>
+                    </section>
+
+                    <section>
+                        <h3>例如一个地址选择器</h3>
+                        <br>
+                        <div class="fragment">
+                            <p>在不同的设备：pc, mobile, pad, tv</p>
+                            <p>不同的环境：browser, native app, hybrid app上</p>
+                        </div>
+
+                        <br>
+                        <div class="fragment">
+                            <p>有著不一样的呈现结构，不一样的交互方式。</p>
+                            <p>但有著一样的校验逻辑，共用同样的数据接口。</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>如何办到？</h3>
+                        <br>
+                        <p>封装适合的组件。不同的场景组合不同的结果</p>
+                        <p>透过多型机制正确的输出</p>
+
+                        <br>
+                        <p>而且可以服务器、浏览器通用</p>
+                    </section>
+
+                    <section>
+                        <img src="img/nodejs-logo.png" width="480px" style="border:0; background: transparent">
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h2>框架化</h2>
+                    </section>
+                    <section>
+                        <h1>中途岛</h1>
+                    </section>
+                </section>
+
+                <section>
+                    <h1>前后端分离</h1>
+                </section>
+
+                <section>
+                    <h3>分离是为了职责专注</h3>
+                </section>
+
+                <section>
+                    <h3>改变是为了让产品更好</h3>
+                </section>
+
+                <section>
+                    <h3>过程中并不是没有遇到困难</h3>
+                </section>
+
+                <section>
+                    <h3>更多的探讨内容</h3>
+                    <img src="img/midway-site.png">
+                    <a class="fragment" href="http://ued.taobao.org/blog/category/bowen/frontend/">http://ued.taobao.org/blog/category/bowen/frontend/</a>
+                </section>
+
+                <section>
+                    <h1>Q & A</h1>
+                </section>
+
+                <section>
+                    <h2>搭車招聘</h2>
+                    <h3 class="pull-down">淘寶UED - 跨終端組</h3>
+                    <h3 class="pull-down"><strong class="strong">清羽 &lt;qingyu@taobao.com&gt;</strong></h3>
+                </section>
+
+                <section>
+                    <h3 class="strong fragment" style="position:absolute;top: 50px; left: 45px;">淘寶 - 中途島小組</h3>
+                    <img src="img/our-team.jpg">
+                </section>
+
+                <section>
+                    <h1>Thank You</h1>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+        </script>
+
+    </body>
+</html>
