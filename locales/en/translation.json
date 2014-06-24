@@ -125,7 +125,7 @@
     "1": {
       "time": "09:15",
       "author": "Goddy Zhao",
-      "title": "JSConf China Introduction"
+      "title": "JSConf China Introduction | <a href='http://2014.jsconf.cn/slides/jsconfchina.pdf' target='_blank'>slide</a> | video"
     },
 
     "2": {
@@ -143,7 +143,7 @@
     "4": {
       "time": "11:10",
       "author": "Hermen",
-      "title": "How to decouple Frond-End from Backend in Taobao"
+      "title": "How to decouple Frond-End from Backend in Taobao | <a href='http://2014.jsconf.cn/slides/herman-taobaoweb/index.html' target='_blank'>slide</a> | video"
     },
 
     "5": {
@@ -155,13 +155,13 @@
     "6": {
       "time": "13:50",
       "author": "Simon Su",
-      "title": "Node.js Practice on Google BigQuery API"
+      "title": "Node.js Practice on Google BigQuery API | <a href='http://2014.jsconf.cn/slides/JSConf%20-%20Google%20BigQuery%20API%20Node.js%E5%AF%A6%E4%BD%9C%E8%A8%98%E9%8C%84.pdf' target='_blank'>slide</a> | video"
     },
 
     "7": {
       "time": "14:30",
       "author": "James Halliday",
-      "title": "Peer-Directed Collaborative Projects"
+      "title": "Peer-Directed Collaborative Projects | <a href='https://github.com/substack/hangjs-2014' target='_blank'>slide</a> | video"
     },
 
     "8": {
@@ -203,7 +203,7 @@
     "14": {
       "time": "09:00",
       "author": "Sofish",
-      "title": "Improve the Performance of Angular Web APP"
+      "title": "Improve the Performance of Angular Web APP | <a href='http://sofi.sh/2412' target='_blank'>slide</a> | video"
     },
 
     "15": {
@@ -215,13 +215,13 @@
     "16": {
       "time": "10:15",
       "author": "Mikael Karon",
-      "title": "Massive Javascript Development"
+      "title": "Massive Javascript Development | <a href='http://2014.jsconf.cn/slides/mikaelkaron-massivejs/massive-js.html' target='_blank'>slide</a> | video"
     },
 
     "17": {
       "time": "11:00",
       "author": "Garry Yao",
-      "title": "Scalable Web Application with TroopJS"
+      "title": "Scalable Web Application with TroopJS | <a href='http://2014.jsconf.cn/slides/garryyao-troopjs/scalable-web-application-with-troopjs.html' target='_blank'>slide</a> | video"
     },
 
     "18": {
@@ -232,13 +232,13 @@
     "19": {
       "time": "13:50",
       "author": "Bo Yu",
-      "title": "Continuous Tech Learning"
+      "title": "Continuous Tech Learning | <a href='http://2014.jsconf.cn/slides/how-to-continue-to-grow-up.pdf' target='_blank'>slide</a> | video"
     },
 
     "20": {
       "time": "14:25",
       "author": "Caesar Chi",
-      "title": "Connect Node.js with Difference Services"
+      "title": "Server Connect To API / 3rd Service Pattern | <a href='http://2014.jsconf.cn/slides/nodejs_api_connect_jsconfcn_hangjs.pdf' target='_blank'>slide</a> | video"
     },
 
     "21": {
@@ -262,13 +262,13 @@
     "23": {
       "time": "16:10",
       "author": "Kai Xu",
-      "title": "Hybrid API"
+      "title": "Hybrid API | <a href='http://2014.jsconf.cn/slides/luics-hybrid-api.html' target='_blank'>slide</a> | video"
     },
 
     "24": {
       "time": "16:50",
       "author": "Luying Li",
-      "title": "Storm - Distributed and fault-tolerant realtime computation"
+      "title": "Storm - Distributed and fault-tolerant realtime computation | <a href='http://2014.jsconf.cn/slides/Introduction-To-Storm.pdf' target='_blank'>slide</a> | video"
     },
 
     "25": {
