@@ -131,13 +131,13 @@
     "2": {
       "time": "09:50",
       "author": "严清",
-      "title": "《Then.js 异步库的实现原理及优缺点》| <a href='http://2014.jsconf.cn/slides/%E4%B8%A5%E6%B8%85-JavaScript%E5%BC%82%E6%AD%A5%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AF%B9%E6%AF%94.key.zip' target='_blank'>slide</a> | <a href='http://hangjs.b0.upaiyun.com/videos/03.%E8%B5%B5%E6%88%90%EF%BC%9AAtom%E7%BC%96%E8%BE%91%E5%99%A8%E5%B5%8C%E5%85%A5Node.js%E5%BC%95%E6%93%8E%E5%AE%9E%E8%B7%B5.mov' target='_blank'>video</a>"
+      "title": "《Then.js 异步库的实现原理及优缺点》| <a href='http://2014.jsconf.cn/slides/%E4%B8%A5%E6%B8%85-JavaScript%E5%BC%82%E6%AD%A5%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AF%B9%E6%AF%94.key.zip' target='_blank'>slide</a> | video"
     },
 
     "3": {
       "time": "10:35",
       "author": "赵成",
-      "title": "《Atom编辑器嵌入Node.js引擎实践》| <a href='http://2014.jsconf.cn/slides/Practice on embedding Node.js into Atom Editor.pdf' target='_blank'>slide</a> | video"
+      "title": "《Atom编辑器嵌入Node.js引擎实践》| <a href='http://2014.jsconf.cn/slides/Practice on embedding Node.js into Atom Editor.pdf' target='_blank'>slide</a> | <a href='http://hangjs.b0.upaiyun.com/videos/03.%E8%B5%B5%E6%88%90%EF%BC%9AAtom%E7%BC%96%E8%BE%91%E5%99%A8%E5%B5%8C%E5%85%A5Node.js%E5%BC%95%E6%93%8E%E5%AE%9E%E8%B7%B5.mov' target='_blank'>video</a>"
     },
 
     "4": {
