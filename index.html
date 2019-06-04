@@ -11,7 +11,7 @@
   <meta name='keywords' content='杭州, Javascript, 技术, 大会'/>
 
   <!-- CSS -->
-  <link href='http://jsconfcn.qiniudn.com/styles.css' rel='stylesheet' type='text/css'/>
+  <link href='/public/styles.css' rel='stylesheet' type='text/css'/>
   <style>
     #header {
       position: fixed;
@@ -614,14 +614,14 @@
 
   <!-- JS -->
   <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
-  <script type='text/javascript' src="http://jsconfcn.qiniudn.com/lib/handlebars.js"></script>
+  <script type='text/javascript' src="/public/lib/handlebars.js"></script>
   <script type='text/javascript'>
     var source = document.getElementById('tempalte').innerHTML;
     var html =  Handlebars.compile(source)({});
     document.body.innerHTML = html;
   </script>
-  <script type='text/javascript' src='http://jsconfcn.qiniudn.com/scripts.js'></script>
-  <script type='text/javascript' src='http://jsconfcn.qiniudn.com/lib/i18next.js'></script>
+  <script type='text/javascript' src='/public/scripts.js'></script>
+  <script type='text/javascript' src='/public/lib/i18next.js'></script>
   <script type='text/javascript'>
     var m = window.location.search.match(/\?l=(zh-CN|en);?/);
     var language = 'zh-CN';
@@ -646,9 +646,9 @@
     });
 
   </script>
-  <script type="text/javascript" src="http://jsconfcn.qiniudn.com/lib/scroll.js"></script>
-  <script type="text/javascript" src="http://jsconfcn.qiniudn.com/lib/mapsapi.js"></script>
-  <script type="text/javascript" src="http://jsconfcn.qiniudn.com/lib/gmaps.js"></script>
+  <script type="text/javascript" src="/public/lib/scroll.js"></script>
+  <script type="text/javascript" src="/public/lib/mapsapi.js"></script>
+  <script type="text/javascript" src="/public/lib/gmaps.js"></script>
   <script type="text/javascript">
     $("[id*='Btn']").stop(true).on('click',function(e){e.preventDefault();$(this).scrolld();});
 
